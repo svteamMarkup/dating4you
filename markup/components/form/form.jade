@@ -1,0 +1,49 @@
+mixin form-search-partner(data)
+	.form
+		.form__heading-title Найдите свою половинку прямо сейчас
+		.form-input-group
+			.form-column._first
+				.form-input-block
+					label.form-input-block__label Я ищу
+					select.form-input-block__field
+						option(value="")
+						option(value="")
+				.form-input-block
+					label.form-input-block__label Регион
+					select.form-input-block__field
+						option(value="")
+						option(value="")
+			.form-column
+				.form-input-block
+					label.form-input-block__label Возраст
+					select.form-input-block__field
+						option(value="")
+						option(value="")
+				.form-input-block
+					label.form-input-block__label Город
+					select.form-input-block__field
+						option(value="")
+						option(value="")
+
+			.form-column
+				.form-input-block
+					label.form-input-block__label Цель
+					select.form-input-block__field
+						option(value="")
+						option(value="")
+				.form-input-block
+					label.form-input-block__label Ориентация
+					select.form-input-block__field
+						option(value="")
+						option(value="")
+		.form-bottom
+			.form-column
+				.form-checkbox-block
+					input(type="checkbox" value="")
+					label.form-checkbox-block__label Сейчас на сайте
+			.form-column._second
+				.form-checkbox-block
+					input(type="checkbox" value="")
+					label.form-checkbox-block__label С фото
+			.form-column
+				a(href="#" title="").form-input-group__button._green Начать поиск

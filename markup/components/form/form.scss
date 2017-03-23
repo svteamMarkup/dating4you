@@ -1,0 +1,65 @@
+.form {
+	&__heading-title {
+		font-size: 18px;
+		font-family: 'Lato-Black';
+		color: $red;
+		text-transform: uppercase;
+		padding-bottom: 9px;
+		border-bottom: 1px solid #ccc;
+		margin-bottom: 15px;
+	}
+}	
+
+.form-input-block {
+	margin-bottom: 18px;
+	&:last-child {
+		margin-bottom: 0;
+	}
+	&__label {
+		font-size: 11px;
+		font-family: 'Lato-Medium';
+		text-transform: uppercase;
+		display: block;
+		margin-bottom: 5px;
+	}
+	&__field {
+		@extend .input-form;
+		width: 100%;
+		height: 24px;
+	}
+
+}
+.form-checkbox-block {
+	&__label {
+		font-size: 14px;
+		font-family: 'Lato-Medium';
+	}
+}
+.form-input-group {
+	display: flex;
+	justify-content: space-between;
+	margin-bottom: 14px;
+	&__button {
+		@extend .button;
+		text-transform: uppercase;
+		font-size: 13px;
+		padding: 13px 14px 11px 17px;
+		line-height: 1;
+		width: 100%;
+	}	
+}
+.form-column {
+	width: 133px;
+	margin-right: 20px;
+	&:last-child {
+		margin-right: 0;
+	}
+	&._first {
+		width: 153px;
+	}
+}
+.form-bottom {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}

@@ -1,0 +1,23 @@
+doctype html
+html(class="no-js", lang="ru")
+
+	include ../components/head/head
+	include ../components/header/header
+	include ../components/menu/menu
+	include ../components/profile/profile
+	include ../components/search-partner/search-partner
+	include ../components/form/form
+	include ../components/footer/footer
+
+	head
+		+head(head.defaults)
+	body
+		block header
+			+header
+		main.main
+			block content
+		block footer
+			+footer
+		.overlay
+		
+		script(src='%=static=%js/main%=hash=%%=min=%.js')

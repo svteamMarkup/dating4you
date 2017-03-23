@@ -1,0 +1,7 @@
+mixin menu(items)
+	.menu
+		each item,i in items
+			-if(i==0)
+				a(href="#" title="").menu__item._active=item
+			-else	
+				a(href="#" title="").menu__item=item

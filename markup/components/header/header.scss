@@ -1,0 +1,22 @@
+.header {
+	background-image: url(%=static=%general/header-bg.png);
+	background-repeat: repeat;
+	&__wrapper {
+		@extend .main;
+		padding-top: 19px;
+		padding-bottom: 16px;
+		display: flex;
+		justify-content: flex-start;
+		align-items: center;
+	}
+	&__logo {
+		text-indent: -9999px;
+		@include bg($logo);
+		margin-right: 62px;
+	}
+}
+.header-column {
+	&._menu {
+		margin-right: 81px; /*94px*/
+	}
+}

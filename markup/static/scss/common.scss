@@ -1,0 +1,39 @@
+html,
+body {
+    height: 100%;
+
+    color: $black;
+    background-color: $darkGray;
+    font-family: 'Lato-Regular';
+    font-size: $baseFontSize;
+}
+input,
+textarea {
+    border: none;
+    outline: none;
+}
+ol li, ul li {
+    @include nl;
+}
+.main {
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 1015px;
+    padding-top: 20px;
+}
+
+.overlay {
+    position: fixed;
+    z-index: 999;
+    top: 0;
+    right: 0;
+    left: 0;
+
+    display: none;
+
+    width: 100%;
+    height: 100%;
+
+    background-color: transparent;
+}
