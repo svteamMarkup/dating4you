@@ -1,0 +1,10 @@
+.cards {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	margin-bottom: 7px;
+}
+.cards-column {
+	width: 238px;
+	margin-bottom: 20px;
+}

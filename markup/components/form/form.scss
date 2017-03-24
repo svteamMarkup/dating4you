@@ -33,6 +33,10 @@
 	&__label {
 		font-size: 14px;
 		font-family: 'Lato-Medium';
+		&:before {
+			margin-top: -3px;
+    		margin-right: 4px;		
+		}
 	}
 }
 .form-input-group {

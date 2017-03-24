@@ -14,17 +14,20 @@ a {
     color: $white;
     text-decoration: none;
     @include transition;
+    &:hover {
+        color: $red;
+    }
 }
 .button {
     display: inline-block;
 
     cursor: pointer;
     text-decoration: none;
-
+    text-align: center;
     
     box-sizing: border-box;
     @include transition;
-    border-radius: 4px;
+    
     &._green {
         background-color: $green;
         color: $white;
@@ -47,4 +50,19 @@ a {
     border: none;
     background-color: #efefef;
     border-top: 1px solid $gray;
+}
+input[type="checkbox"] {
+    display: none;
+}
+input[type="checkbox"] + label:before {
+    content: '';
+    @extend .fa;    
+    width: 12px;
+    height: 12px;
+    border: 1px solid #959a9c;
+    vertical-align: middle;
+    cursor: pointer;
+}
+input[type="checkbox"]:checked + label:before {
+    @extend .fa-check;
 }

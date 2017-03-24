@@ -1,0 +1,37 @@
+.user-info {
+	padding: 21px 19px 15px;
+	background-color: $white;
+	border-radius: 3px;
+	box-shadow: 1px 1px 1px rbga($black, .7);
+}
+.user-info-left {
+	width: 220px;
+}
+.user-info-left-avatar {
+	&__image {
+		display: block;
+	}
+}
+.user-info-left-files {
+	display: flex;
+	justify-content: space-between;
+	&__label {
+		background-color: #ebebeb;
+		font-size: 13px;
+		padding-top: 11px;
+		padding-bottom: 11px;
+		width: 50%;
+		border-right: 1px solid #c7c7c7;
+		text-align: center;
+		&._last {
+			border-right: 0;
+		}
+		.fa {
+			color: $red;
+			font-size: 14px;
+		}
+		span {
+			padding-left: 10px;
+		}
+	}
+}

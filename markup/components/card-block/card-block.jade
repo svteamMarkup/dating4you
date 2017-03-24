@@ -1,0 +1,13 @@
+mixin card-block(data)
+	-var modifier = attributes.class || ''
+	.card-block
+		.card-block-left
+			img(src="http://placehold.it/110x150" alt="").card-block-left__image
+		.card-block-content
+			a(href="#" title="").card-block-content__title(class="#{modifier}") Инна С.
+			.card-block-content__info
+				.card-block-content__text 22 года
+				.card-block-content__text Россия
+				.card-block-content__text._last	Гетеро
+			+contacts
+				

@@ -1,7 +1,7 @@
 mixin form-search-partner(data)
 	.form
 		.form__heading-title Найдите свою половинку прямо сейчас
-		.form-input-group
+		form(action="" method="GET").form-input-group
 			.form-column._first
 				.form-input-block
 					label.form-input-block__label Я ищу
@@ -24,7 +24,6 @@ mixin form-search-partner(data)
 					select.form-input-block__field
 						option(value="")
 						option(value="")
-
 			.form-column
 				.form-input-block
 					label.form-input-block__label Цель
@@ -37,13 +36,13 @@ mixin form-search-partner(data)
 						option(value="")
 						option(value="")
 		.form-bottom
+			.form-column._first
+				.form-checkbox-block
+					input(type="checkbox" value="" id="ch1")
+					label(for="ch1").form-checkbox-block__label Сейчас на сайте
 			.form-column
 				.form-checkbox-block
-					input(type="checkbox" value="")
-					label.form-checkbox-block__label Сейчас на сайте
-			.form-column._second
-				.form-checkbox-block
-					input(type="checkbox" value="")
-					label.form-checkbox-block__label С фото
+					input(type="checkbox" value="" id="ch2")
+					label(for="ch2").form-checkbox-block__label С фото
 			.form-column
 				a(href="#" title="").form-input-group__button._green Начать поиск

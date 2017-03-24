@@ -1,0 +1,30 @@
+.contacts {
+	display: flex;
+	justify-content: flex-start;
+	position: absolute;
+	bottom: 0;
+}
+.contacts-item {
+	background-color: #e5e5e5;
+	height: 20px;
+	width: 20px;
+	position: relative;
+	margin-right: 5px;
+	&._last {
+		margin-right: 0;
+	}
+	&__link {
+		display: block;
+		@include absoluteCenter;
+
+		&._icq {
+			@include bg($icq);
+		}
+		&._skype {
+			@include bg($skype);
+		}
+		&._phone {
+			@include bg($phone);
+		}		
+	}
+}
