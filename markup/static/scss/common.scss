@@ -21,6 +21,12 @@ ol li, ul li {
     margin-right: auto;
     max-width: 1015px;
     padding-top: 20px;
+    &__background-title {
+        @extend .background-title;
+        padding-top: 17px;
+        padding-bottom: 13px;
+        margin-bottom: 15px;
+    }
 }
 
 .overlay {

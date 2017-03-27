@@ -1,8 +1,10 @@
-mixin contacts(data)
+mixin contacts(show)
 	.contacts
 		.contacts-item
 			a(href="#" title="").contacts-item__link._icq
 		.contacts-item
 			a(href="#" title="").contacts-item__link._skype
-		.contacts-item
-			a(href="#" title="").contacts-item__link._phone					
+		.contacts-item._last
+			a(href="#" title="").contacts-item__link._phone
+		-if(show == true)
+			a(href="#" title="").contacts__link Показать

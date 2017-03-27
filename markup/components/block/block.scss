@@ -1,0 +1,8 @@
+.block {
+	background-color: $white;
+	box-shadow: 1px 1px 1px rgba($black, .7);
+	border-radius: 3px;
+	&._search-partner{
+		padding: 17px 20px;
+	}
+}

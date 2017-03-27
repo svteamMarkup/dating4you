@@ -1,8 +1,19 @@
 .contacts {
 	display: flex;
 	justify-content: flex-start;
+	align-items: center;
 	position: absolute;
 	bottom: 0;
+	&__link {
+		color: $blue;
+		text-decoration: underline;
+		padding-left: 9px;
+		line-height: 1;
+		&:hover {
+			color: $blue;
+			text-decoration: none;
+		}
+	}
 }
 .contacts-item {
 	background-color: #e5e5e5;

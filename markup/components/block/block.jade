@@ -1,0 +1,12 @@
+mixin block-user-info(data)
+	.block
+		+user-info
+
+mixin block-search-partner(data)
+	-var modifier = attributes.class || ''
+	.block(class="#{modifier}")
+		+form-search-partner
+
+mixin block-register(data)
+	.block
+		
