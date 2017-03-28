@@ -1,5 +1,6 @@
 mixin contacts(show)
-	.contacts
+	-var modifier = attributes.class || ''
+	.contacts(class="#{modifier}")
 		.contacts-item
 			a(href="#" title="").contacts-item__link._icq
 		.contacts-item

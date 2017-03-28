@@ -3,8 +3,25 @@
 	flex-wrap: wrap;
 	justify-content: space-between;
 	margin-bottom: 7px;
+	&._unflex {
+		display: block;
+	}
 }
 .cards-column {
 	width: 238px;
 	margin-bottom: 20px;
+	padding: 10px 29px 10px 10px;
+	box-sizing: border-box;
+	border-radius: 3px;
+	background-color: $white;
+	box-shadow: 1px 1px 1px rgba($black, .7);
+}
+.cards-row {
+	width: 100%;
+	padding: 9px 19px 10px 8px;
+	background-color: $white;
+	border-radius: 3px;
+	margin-bottom: 10px;
+	box-sizing: border-box;
+	border: 1px solid #c7c7c7;
 }

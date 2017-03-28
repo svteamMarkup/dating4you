@@ -45,6 +45,18 @@ a {
 .big-title {
     font-size: 27px;
 }
+.side-bordered-title {
+    color: $red;
+    border-left: 3px solid $red;
+    text-transform: uppercase;
+    background-color: $lightGray;
+    line-height: 1;
+    &._green {
+        border-left-color: $green;
+        color: $green;
+        background-color: #e1e1e1;
+    }
+}
 .background-title {
     color: $red;
     font-family: 'Lato-Medium';
@@ -60,6 +72,9 @@ a {
     border: none;
     background-color: #efefef;
     border-top: 1px solid $gray;
+    text-transform: uppercase;
+    font-size: 11px;
+    font-family: 'Lato-Medium';
 }
 input[type="checkbox"] {
     display: none;

@@ -46,3 +46,60 @@ mixin form-search-partner(data)
 					label(for="ch2").form-checkbox-block__label С фото
 			.form-column
 				a(href="#" title="").form-input-group__button._green Начать поиск
+
+
+mixin form-registration(data)
+	-var modifier = attributes.class || ''
+	.form(class="#{modifier}")
+		.form__heading-title._no-bordered Для дальнейшего просмотра необходима регистрация
+		.form__title Заполните форму ниже, чтобы зарегистрироваться
+		form(action="" method="GET").form-input-group._unflex._side-bordered
+			.form-input-group-block
+				.form-input-block._flex
+					.form-input-block__left
+						label.form-input-block__label Имя:*
+					.form-input-block__right
+						input(type="text" value="" placeholder="Введите ваше имя").form-input-block__field
+				.form-input-block._flex
+					.form-input-block__left
+						label.form-input-block__label Город:
+					.form-input-block__right
+						input(type="text" value="" placeholder="Москва").form-input-block__field
+				.form-input-block._flex
+					.form-input-block__left
+						label.form-input-block__label Пол:
+					.form-input-block__right
+						select.form-input-block__field
+							option(value="") Мужчина
+							option(value="") Женщина
+				.form-input-block._flex
+					.form-input-block__left
+						label.form-input-block__label Дата рождения:
+					.form-input-block__right._flex
+						.form-input-block-column._day
+							select.form-input-block__field._no-padding
+								option(value="") 15
+								option(value="")
+						.form-input-block-column._month
+							select.form-input-block__field._no-padding
+								option(value="") Январь
+								option(value="")
+						.form-input-block-column._year
+							select.form-input-block__field._no-padding
+								option(value="") 1990
+								option(value="")													
+				.form-input-block._flex
+					.form-input-block__left
+						label.form-input-block__label Ориентация:
+					.form-input-block__right
+						select.form-input-block__field
+							option(value="") Гетеро
+							option(value="")
+				.form-input-block._flex
+					.form-input-block__left
+						label.form-input-block__label Цель знакомств:
+					.form-input-block__right
+						select.form-input-block__field
+							option(value="") Поиск знакомств
+							option(value="")
+			input(type="submit" value="Зарегистрироваться").form-input-group__button._green._big

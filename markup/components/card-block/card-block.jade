@@ -1,8 +1,8 @@
-mixin card-block(data)
+mixin card-block(imageSize)
 	-var modifier = attributes.class || ''
 	.card-block
 		.card-block-left
-			img(src="http://placehold.it/110x150" alt="").card-block-left__image
+			img(src="http://placehold.it/#{imageSize}" alt="").card-block-left__image
 		.card-block-content
 			a(href="#" title="").card-block-content__title(class="#{modifier}") Инна С.
 			.card-block-content__info
@@ -10,4 +10,18 @@ mixin card-block(data)
 				.card-block-content__text Россия
 				.card-block-content__text._last	Гетеро
 			+contacts
-				
+
+mixin card-block-row(imageSize)
+	-var modifier = attributes.class || ''
+	.card-block(class="#{modifier}")
+		.card-block-left
+			img(src="http://placehold.it/#{imageSize}" alt="").card-block-left__image
+		.card-block-content
+			a(href="#" title="").card-block-content__title._row(class="#{modifier}") Инна С.
+			.card-block-content__info._row
+				.card-block-content__text 22 года
+				.card-block-content__text Россия
+				.card-block-content__text._last	Гетеро
+			+contacts._right
+
+

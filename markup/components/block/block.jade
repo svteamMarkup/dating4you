@@ -7,6 +7,11 @@ mixin block-search-partner(data)
 	.block(class="#{modifier}")
 		+form-search-partner
 
-mixin block-register(data)
-	.block
+mixin block-registration(data)
+	.block._flex
+		.registration-form-column
+			+form-registration._registration
+		.block-right
+			.block-right__title._green Они ждут тебя
+			+cards-row
 		

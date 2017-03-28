@@ -9,10 +9,24 @@
 		font-size: 14px;
 		color: $white;
 		text-transform: uppercase;
-		padding: 18px 23px 16px 18px;
+		padding: 18px 23px 16px 24px;
 		border-right: 1px solid $darkGray;
+		&:hover {
+			background-color: $red;
+			color: $white;
+			.fa {
+				color: $black;
+			}			
+		}
 		&._last {
 			border-right: 0;
+		}
+		&._active {
+			background-color: $red;
+			color: $white;
+			.fa {
+				color: $black;
+			}
 		}
 		.fa {
 			color: $red;

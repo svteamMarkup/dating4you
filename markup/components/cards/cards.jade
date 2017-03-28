@@ -1,27 +1,38 @@
-mixin cards(data)
+mixin cards-column(data)
 	.cards
 		.cards-column
-			+card-block._female
+			+card-block('110x150')._female
 		.cards-column
-			+card-block._female
+			+card-block('110x150')._female
 		.cards-column
-			+card-block._male
+			+card-block('110x150')._male
 		.cards-column
-			+card-block._female
+			+card-block('110x150')._female
 		.cards-column
-			+card-block._female
+			+card-block('110x150')._female
 		.cards-column
-			+card-block._female
+			+card-block('110x150')._female
 		.cards-column
-			+card-block._male
+			+card-block('110x150')._male
 		.cards-column
-			+card-block._female
+			+card-block('110x150')._female
 		.cards-column
-			+card-block._female
+			+card-block('110x150')._female
 		.cards-column
-			+card-block._female
+			+card-block('110x150')._female
 		.cards-column
-			+card-block._male
+			+card-block('110x150')._male
 		.cards-column
-			+card-block._female
+			+card-block('110x150')._female
 
+
+mixin cards-row(data)
+	.cards._unflex
+		.cards-row
+			+card-block-row('59x80')._female
+		.cards-row
+			+card-block-row('59x80')._female
+		.cards-row
+			+card-block-row('59x80')._female
+		.cards-row
+			+card-block-row('59x80')._female

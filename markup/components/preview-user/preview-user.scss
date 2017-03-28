@@ -1,0 +1,31 @@
+.preview-user {
+
+}
+.preview-user-name {
+	font-size: 17px;
+	display: block;
+	margin-top: 12px;
+	color: $black;
+	font-family: 'Lato-Bold';
+	position: relative;
+	margin-bottom: 8px;
+	text-align: center;
+	&__link {
+		&:before {
+			content: '';
+			position: absolute;
+			left: 0;
+			top: 1px;
+		}
+		&._female {
+			&:before {
+				@include bg($female);
+			}
+		}
+		&._male {
+			&:before {
+				@include bg($male);
+			}
+		}		
+	}
+}
