@@ -1,0 +1,10 @@
+mixin messages(data)
+	.messages
+		.messages-top
+			.messages-top-column
+				+search
+			a(href="#" title="").messages-top__button._green Написать сообщение
+		.messages-comments-list
+			+message-block('56x56')
+			+message-block('56x56')
+			+message-block('56x56')

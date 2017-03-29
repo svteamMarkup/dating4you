@@ -1,11 +1,14 @@
 mixin preview-user(data)
+	-var modifier = attributes.class || ''
 	.preview-user
-		img(src="http://placehold.it/220x294" alt="").preview-user__image
+		.preview-user__image
+			img(src="http://placehold.it/220x294" alt="")
 		.preview-user-name
-			a(href="#" title="").preview-user-name__link._female Инна С.
+			a(href="#" title="").preview-user-name__link(class="#{modifier}") Инна С.
 		.preview-user-info
-			.preview-user-info 22 года /
-			.preview-user-info Россия /
-			.preview-user-info Гетеро
+			.preview-user-info__item 22 года
+			.preview-user-info__item Россия
+			.preview-user-info__item._last Гетеро
 		.preview-user-actions
-			a(href="#" title="").preview-user-actions__button Написать сообщение
+			a(href="#" title="").preview-user-actions__button._green Написать сообщение
+			a(href="#" title="").preview-user-actions__button-second._gray

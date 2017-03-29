@@ -39,7 +39,10 @@ a {
     &._gray {
         background-color: $lightGray;
         color: $darkGray;
-        box-shadow: 1px 0 2px rgba($black, .67);
+        box-shadow: 0 1px 2px rgba($black, .67);
+        &:hover {
+            background-color: darken($lightGray, 5%);
+        }
     }    
 }
 .big-title {
@@ -91,3 +94,12 @@ input[type="checkbox"] + label:before {
 input[type="checkbox"]:checked + label:before {
     @extend .fa-check;
 }
+
+button {
+    -webkit-appearance: none;
+    background: 0 0;
+    padding: 0;
+    border: 0;
+    border-radius: 0;
+    line-height: 1;
+}    

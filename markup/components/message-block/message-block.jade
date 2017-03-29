@@ -1,0 +1,16 @@
+mixin message-block(imageSize)
+	.message-block
+		.message-block-left
+			.message-block-left__image
+				img(src="http://placehold.it/#{imageSize}")
+			.message-block-left__text
+				a(href="#" title="").message-block-left__name._female Инна С.
+				.message-block-left-date
+					.message-block-left-date__item 15 мая 2017
+					.message-block-left-date__item._last 15:30
+		.message-block__text.
+			Панграммы используются для демонстрации шрифтов, проверки передачи текста по линиям связи, тестирования печатающих устройств и т.п.
+		.message-block-right
+			.message-block-right__actions
+				a(href="#" title="").message-block-right__button._green Ответить
+				a(href="#" title="").message-block-right__button-second._gray

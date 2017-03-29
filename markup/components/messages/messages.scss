@@ -1,0 +1,44 @@
+.messages {}
+
+.messages-top {
+	display: flex;
+	justify-content: space-between;
+	padding-bottom: 18px;
+	&__button {
+		@extend .button;
+		padding: 10px 12px 8px 32px;
+		font-size: 14px;
+		font-family: 'Lato-Medium';
+		line-height: 1;
+		position: relative;
+		&:before {
+			@extend .fa;
+			position: absolute;
+			top: 8px;
+			left: 10px;
+			@extend .fa-envelope-o;
+		}
+	}
+}
+
+.messages-top-column {
+	width: 310px;
+}
+
+.message-block-right {
+	&__button {
+		@extend .button;
+		padding: 8px 18px 4px 15px;
+		font-size: 14px;
+		font-family: 'Lato-Medium';
+		line-height: 1;
+		margin-right: 7px;
+	}
+	&__button-second {
+		@extend .button;
+		line-height: 26px;
+		width: 26px;
+		@extend .fa;
+		@extend .fa-trash-o;
+	}	
+}

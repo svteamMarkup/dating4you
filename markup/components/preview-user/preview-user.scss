@@ -1,5 +1,13 @@
 .preview-user {
-
+	background-color: $white;
+	padding: 9px;
+	box-shadow: 0 1px 1px rgba($black, .7);
+	border-radius: 3px;
+	&__image {
+		img {
+			display: block;
+		}
+	}
 }
 .preview-user-name {
 	font-size: 17px;
@@ -7,14 +15,17 @@
 	margin-top: 12px;
 	color: $black;
 	font-family: 'Lato-Bold';
-	position: relative;
 	margin-bottom: 8px;
 	text-align: center;
 	&__link {
+		position: relative;
+		color: $black;
+		font-size: 17px;
+		font-family: 'Lato-Bold';
 		&:before {
 			content: '';
 			position: absolute;
-			left: 0;
+			left: -19px;
 			top: 1px;
 		}
 		&._female {
@@ -27,5 +38,57 @@
 				@include bg($male);
 			}
 		}		
+	}
+}
+.preview-user-info {
+	display: flex;
+	justify-content: center;
+	/* width: 155px; */
+	margin-bottom: 10px;
+	font-size: 12px;
+	color: #7c7373;
+	&__item {
+		margin-right: 7px;
+		position: relative;
+		padding-right: 12px;
+		&:after {
+			content: '/';
+			position: absolute;
+			top: 0;
+			right: 0;
+		}
+		&._last {
+			margin-right: 0;
+			padding-right: 0;
+			&:after {
+				display: none;
+			}			
+		}
+	}
+}
+.preview-user-actions {
+	display: flex;
+	justify-content: space-between;
+	&__button {
+		@extend .button;
+		padding: 10px 16px 8px 29px;
+		font-size: 14px;
+		font-family: 'Lato-Medium';
+		position: relative;
+		line-height: 1;
+		&:before {
+			position: absolute;
+			top: 8px;
+			left: 8px;
+			@extend .fa;
+			@extend .fa-envelope-o;
+		}		
+	}
+	&__button-second {
+		@extend .button;
+		line-height: 31px;
+		width: 31px;
+		@extend .fa;
+		@extend .fa-user-times;
 	}
 }
