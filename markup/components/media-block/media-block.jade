@@ -1,0 +1,8 @@
+mixin media-block(imageSize, video)
+	.media-block
+		a(href="#" title="").media-block__button._gray
+		-if(video == true)
+			button.media-block__control
+				i.fa.fa-play-circle-o
+		a(href="#" title="").media-block__image
+			img(src="http://placehold.it/#{imageSize}" alt="")

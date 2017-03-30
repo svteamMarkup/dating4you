@@ -9,6 +9,7 @@
 	&__submit {
 		@include absoluteVerticalCenter;
 		right: 10px;
+		height: 100%;
 		.fa {
 			font-size: 11px;
 		}

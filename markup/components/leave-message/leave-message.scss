@@ -1,0 +1,39 @@
+.leave-message {
+	padding-right: 16px;
+	padding-left: 19px;
+}
+
+.leave-message-top {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	border-bottom: 1px solid #d7d7d7;
+	padding-bottom: 16px;
+	&__control {
+		.fa {
+			font-size: 18px;
+			color: #a1a1a1;
+		}
+	}
+}
+.leave-message-top-center {
+	display: flex;
+	justify-content: flex-start;
+	&__image {
+		margin-right: 14px;
+		img {
+			display: block;
+			border-radius: 50%;
+		}
+	}
+	&__name {
+		font-size: 27px;
+		font-family: 'Lato-Bold';
+		color: $black;
+		padding-top: 4px;
+	}
+}
+
+.leave-message-top-column {
+	width: 222px;
+}

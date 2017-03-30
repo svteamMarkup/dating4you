@@ -25,20 +25,3 @@
 	width: 310px;
 }
 
-.message-block-right {
-	&__button {
-		@extend .button;
-		padding: 8px 18px 4px 15px;
-		font-size: 14px;
-		font-family: 'Lato-Medium';
-		line-height: 1;
-		margin-right: 7px;
-	}
-	&__button-second {
-		@extend .button;
-		line-height: 26px;
-		width: 26px;
-		@extend .fa;
-		@extend .fa-trash-o;
-	}	
-}

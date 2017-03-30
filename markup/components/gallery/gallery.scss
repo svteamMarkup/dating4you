@@ -1,0 +1,56 @@
+.gallery {}
+
+.gallery-top {
+	display: flex;
+	justify-content: space-between;
+	padding-bottom: 20px;
+	&__button {
+		@extend .button;
+		overflow: hidden;
+		position: relative;
+		font-size: 14px;
+		font-family: 'Lato-Medium';
+		padding: 11px 21px 7px 32px;
+	}
+}
+.gallery-top-tabs {
+	display: flex;
+	justify-content: flex-start;
+	&__item {
+		margin-right: 45px;
+		font-family: 'Lato-Bold';
+		font-size: 27px;
+		color: $white;
+		border-bottom: 1px dashed transparent;
+		&:hover {
+			color: $red;
+			border-bottom-color: $red;
+		}
+		&._active {
+			color: $red;
+			border-bottom-color: $red;
+		}
+	}
+}
+
+.gallery-media {
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+	&__right {
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: space-between;
+	}
+}
+.gallery-media-top {
+	display: flex;
+	justify-content: space-between;
+}
+
+.gallery-column {
+	margin-bottom: 20px;
+	&._big {
+		margin-right: 19px;
+	}
+}

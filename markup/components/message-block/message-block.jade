@@ -1,10 +1,11 @@
 mixin message-block(imageSize)
+	-var modifier = attributes.class || ''
 	.message-block
 		.message-block-left
 			.message-block-left__image
-				img(src="http://placehold.it/#{imageSize}")
+				img(src="http://placehold.it/#{imageSize}" alt="")
 			.message-block-left__text
-				a(href="#" title="").message-block-left__name._female Инна С.
+				a(href="#" title="").message-block-left__name(class="#{modifier}") Инна С.
 				.message-block-left-date
 					.message-block-left-date__item 15 мая 2017
 					.message-block-left-date__item._last 15:30

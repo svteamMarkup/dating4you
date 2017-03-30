@@ -1,0 +1,40 @@
+mixin gallery(data)
+	.gallery
+		.gallery-top
+			.gallery-top-tabs
+				a(href="#" title="").gallery-top-tabs__item Фото
+				a(href="#" title="").gallery-top-tabs__item._last Видео
+			.gallery-top__button._green Загрузить
+				form(action="" enctype="multipart/form-data" method="POST")
+					label(for="")
+					input(type="file" name="")
+		.gallery-media
+			.gallery-media-top
+				.gallery-column._big
+					+media-block('500x398')
+				.gallery-media__right
+					.gallery-column
+						+media-block('239x189')
+					.gallery-column
+						+media-block('239x189')
+					.gallery-column
+						+media-block('239x189')
+					.gallery-column
+						+media-block('239x189')
+			.gallery-column
+				+media-block('239x189')
+			.gallery-column
+				+media-block('239x189')
+			.gallery-column
+				+media-block('239x189')
+			.gallery-column
+				+media-block('239x189')
+			.gallery-column
+				+media-block('239x189')
+			.gallery-column
+				+media-block('239x189')
+			.gallery-column
+				+media-block('239x189', true)
+			.gallery-column
+				+media-block('239x189')
+

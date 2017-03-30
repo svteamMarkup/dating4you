@@ -1,0 +1,17 @@
+mixin leave-message(imageSize)
+	.leave-message
+		.leave-message-top
+			a(href="#" title="").leave-message-top__control
+				i.fa.fa-arrow-left
+			.leave-message-top-center
+				.leave-message-top-center__image
+					img(src="http://placehold.it/#{imageSize}" alt="")
+				a(href="#" title="").leave-message-top-center__name Инна С.
+			.leave-message-top-column
+				+search
+		+message-block-second('56x56')
+		+message-block-second('56x56')
+		+message-block-second('56x56')
+		+message-block-second('56x56')
+	+write-message('56x56')
+

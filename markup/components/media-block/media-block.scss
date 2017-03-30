@@ -1,0 +1,33 @@
+.media-block {
+	position: relative;
+	&:hover .media-block__button {
+		opacity: 1;
+		visibility: visible;
+	}
+	&__image {
+		img {
+			display: block;
+		}
+	}
+	&__button {
+		@extend .button;
+		position: absolute;
+		right: 9px;
+		top: 10px;
+		@extend .fa;
+		@extend .fa-close;
+		width: 31px;
+		font-size: 19px;
+		color: $darkGray;
+		line-height: 31px;
+		opacity: 0;
+		visibility: hidden;
+	}
+	&__control {
+		@include absoluteCenter;
+		.fa {
+			font-size: 69px;
+			color: $white;
+		}
+	}
+}

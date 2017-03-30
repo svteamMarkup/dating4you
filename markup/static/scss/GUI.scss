@@ -74,7 +74,7 @@ a {
     box-sizing: border-box;
     border: none;
     background-color: #efefef;
-    border-top: 1px solid $gray;
+    box-shadow: 0 1px 0 rgba($darkGray, .2) inset;
     text-transform: uppercase;
     font-size: 11px;
     font-family: 'Lato-Medium';
@@ -94,6 +94,19 @@ input[type="checkbox"] + label:before {
 input[type="checkbox"]:checked + label:before {
     @extend .fa-check;
 }
+
+input[type="file"] {
+    cursor: inherit;
+    display: block;
+    font-size: 999px;
+    min-height: 100%;
+    min-width: 100%;
+    opacity: 0;
+    position: absolute;
+    right: 0;
+    text-align: right;
+    top: 0;
+}    
 
 button {
     -webkit-appearance: none;

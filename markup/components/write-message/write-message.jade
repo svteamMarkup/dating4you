@@ -1,0 +1,9 @@
+mixin write-message(imageSize)
+	.write-message
+		.write-message__image
+			img(src="http://placehold.it/#{imageSize}")
+		.write-message-form
+			.write-message-form-column
+				textarea(value="").write-message-form__textarea
+			button(type="submit" value="" name="").write-message-form__submit._green
+
