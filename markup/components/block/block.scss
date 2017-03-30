@@ -10,6 +10,9 @@
 	&._flex {
 		display: flex;
 	}
+	&._my-profile {
+		padding: 52px 105px 41px 89px;
+	}
 }
 
 .block-right {
@@ -32,4 +35,8 @@
 
 .block-leave-message-row {
 	padding-top: 18px;
+}
+
+.block-my-profile-column {
+	width: 322px;	
 }

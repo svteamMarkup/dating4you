@@ -11,6 +11,13 @@
 		font-size: 14px;
 		font-family: 'Lato-Medium';
 		padding: 11px 21px 7px 32px;
+		&:before {
+			position: absolute;
+			top: 11px;
+			left: 10px;
+			@extend .fa;
+			@extend .fa-plus-circle;
+		}
 	}
 }
 .gallery-top-tabs {
