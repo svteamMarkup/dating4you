@@ -1,6 +1,6 @@
 mixin block-user-info(data)
 	.block
-		+user-info
+		+user-info('220x294')
 
 mixin block-search-partner(data)
 	-var modifier = attributes.class || ''
@@ -28,5 +28,5 @@ mixin block-leave-message(data)
 
 mixin block-my-profile(data)
 	.block._my-profile
-		.block-my-profile-column
-			+form-profile
+		.block-my-profile-row
+			+form-profile('220x294')

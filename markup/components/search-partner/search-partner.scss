@@ -3,6 +3,9 @@
 	justify-content: space-between;
 	border-left: 3px solid $red;
 	margin-bottom: 19px;
+	@media screen and(max-width: 760px) {
+		display: block;
+	}
 	&__title {
 		font-size: 25px;
 		line-height: 27px;
@@ -29,5 +32,8 @@
 		margin-left: 23px;
 		margin-top: 13px;
 		padding-bottom: 13px;
+		@media screen and(max-width: 760px) {
+			width: auto;
+		}
 	}
 }

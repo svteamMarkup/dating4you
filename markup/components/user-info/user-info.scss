@@ -62,8 +62,17 @@
 			position: absolute;
 			top: 10px;
 			right: -19px;
-			@include bg($female-small);
 		}
+		&._female {
+			&:after {
+				@include bg($female-small);		
+			}
+		}
+		&._male {
+			&:after {
+				@include bg($male);
+			}
+		}		
 	}
 	&__status {
 		color: $green;
@@ -208,7 +217,7 @@
 .user-info-right-presents {
 	&__title {
 		@extend .side-bordered-title;
-		margin-bottom: 23px;
+		margin-bottom: 19px;
 		padding-top: 9px;
 		padding-bottom: 8px;
 		padding-left: 8px;

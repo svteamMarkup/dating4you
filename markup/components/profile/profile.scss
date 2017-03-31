@@ -1,7 +1,4 @@
 .profile {
-	display: flex;
-	justify-content: flex-end;
-	align-items: center;
 	&__user {
 		font-size: 34px;
 		color: #353434;
@@ -19,6 +16,21 @@
 			font-size: 14px;
 			color: #cabdbd;
 		}
+	}
+	&__mobile {
+		display: none;
+		@media screen and(max-width: 760px) {
+			display: block;
+			@include bg($profile-mobile);
+		}
+	}
+	&__content {
+		display: flex;
+		justify-content: flex-end;
+		align-items: center;		
+		@media screen and(max-width: 760px) {
+			display: none;
+		} 	
 	}
 }
 .profile-hello {

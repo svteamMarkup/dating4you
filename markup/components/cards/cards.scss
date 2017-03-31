@@ -15,6 +15,9 @@
 	border-radius: 3px;
 	background-color: $white;
 	box-shadow: 1px 1px 1px rgba($black, .7);
+	@media screen and(max-width: 760px) {
+		width: 100%;
+	}	
 }
 .cards-row {
 	width: 100%;

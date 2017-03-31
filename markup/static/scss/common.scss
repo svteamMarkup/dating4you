@@ -22,6 +22,12 @@ ol li, ul li {
     margin-right: auto;
     max-width: 1015px;
     padding-top: 20px;
+    padding-bottom: 145px;
+    @media screen and(max-width: 960px) {
+        width: auto;
+        padding-left: 10px;
+        padding-right: 10px;
+    }    
     &__background-title {
         @extend .background-title;
         padding-top: 17px;

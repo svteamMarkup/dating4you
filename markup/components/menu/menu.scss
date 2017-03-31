@@ -1,9 +1,35 @@
 .menu {
+	&__mobile {
+		display: none;
+		@include bg($menu-mobile);
+		@media screen and(max-width: 760px) {
+			display: block;
+		}
+	}
+	&__list {
+		display: flex;
+		justify-content: space-between;
+		@media screen and(max-width: 760px) {
+			display: none;
+			width: 100%;
+			text-align: center;
+			position: absolute;
+			top: 69px;
+			left: 0;
+			background-color: $darkGray;
+		}
+	}
 	&__item {
 		font-size: 14px;
 		text-transform: uppercase;
 		margin-right: 39px;
 		text-shadow: 0 1px 2px $black;
+		display: block;
+		@media screen and(max-width: 760px) {
+			margin-right: 0;
+			padding-top: 15px;
+			padding-bottom: 15px;
+		}	
 		&:last-child {
 			margin-right: 0;
 		}

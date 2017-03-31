@@ -1,8 +1,8 @@
-mixin user-info(data)
+mixin user-info(imageSize)
 	.user-info
 		.user-info-left
 			.user-info-left-avatar
-				img(src="http://placehold.it/220x294" alt="").user-info-left-avatar__image
+				img(src="http://placehold.it/#{imageSize}" alt="").user-info-left-avatar__image
 			.user-info-left-files
 					.user-info-left-files__label
 						i.fa.fa-camera
@@ -31,7 +31,7 @@ mixin user-info(data)
 					img(src="%=static=%images/content/photo.png" alt="")						
 		.user-info-content
 			.user-info-content-top
-				.user-info-content-top__title Мила Дьяконова
+				.user-info-content-top__title._female Мила Дьяконова
 				.user-info-content-top__status На сайте
 			.user-info-content__text.
 				Хочу встретить мужчину для постояных встреч , отношений (рост не ниже 175см спортивный, член от 20см.) интересуют отношения!!!!

@@ -57,24 +57,24 @@ mixin form-registration(data)
 			.form-input-group-block
 				.form-input-block._flex
 					.form-input-block__left
-						label.form-input-block__label Имя:*
+						label.form-input-block__label._no-margin Имя:*
 					.form-input-block__right
 						input(type="text" value="" placeholder="Введите ваше имя").form-input-block__field
 				.form-input-block._flex
 					.form-input-block__left
-						label.form-input-block__label Город:
+						label.form-input-block__label._no-margin Город:
 					.form-input-block__right
 						input(type="text" value="" placeholder="Москва").form-input-block__field
 				.form-input-block._flex
 					.form-input-block__left
-						label.form-input-block__label Пол:
+						label.form-input-block__label._no-margin Пол:
 					.form-input-block__right
 						select.form-input-block__field
 							option(value="") Мужчина
 							option(value="") Женщина
 				.form-input-block._flex
 					.form-input-block__left
-						label.form-input-block__label Дата рождения:
+						label.form-input-block__label._no-margin Дата рождения:
 					.form-input-block__right._flex
 						.form-input-block-column._day
 							select.form-input-block__field._no-padding
@@ -90,14 +90,14 @@ mixin form-registration(data)
 								option(value="")													
 				.form-input-block._flex
 					.form-input-block__left
-						label.form-input-block__label Ориентация:
+						label.form-input-block__label._no-margin Ориентация:
 					.form-input-block__right
 						select.form-input-block__field
 							option(value="") Гетеро
 							option(value="")
 				.form-input-block._flex
 					.form-input-block__left
-						label.form-input-block__label Цель знакомств:
+						label.form-input-block__label._no-margin Цель знакомств:
 					.form-input-block__right
 						select.form-input-block__field
 							option(value="") Поиск знакомств
@@ -106,33 +106,33 @@ mixin form-registration(data)
 
 
 
-mixin form-profile(data)
+mixin form-profile(imageSize)
 	-var modifier = attributes.class || ''
 	.form(class="#{modifier}")
 		.form__title._big Мой профиль
-		form(action="" method="GET").form-input-group._unflex
-			.form-input-group-block._no-bordered
+		form(action="" method="GET").form-input-group._my-profile
+			.form-input-group-block._no-bordered._my-profile-column-1
 				.form-input-group-block__top
 					.form-input-block._flex
 						.form-input-block__left
-							label.form-input-block__label Имя:*
+							label.form-input-block__label._no-margin Имя:*
 						.form-input-block__right
 							input(type="text" value="" placeholder="Введите ваше имя").form-input-block__field
 					.form-input-block._flex
 						.form-input-block__left
-							label.form-input-block__label Город:
+							label.form-input-block__label._no-margin Город:
 						.form-input-block__right
 							input(type="text" value="" placeholder="Москва").form-input-block__field
 					.form-input-block._flex
 						.form-input-block__left
-							label.form-input-block__label Пол:
+							label.form-input-block__label._no-margin Пол:
 						.form-input-block__right
 							select.form-input-block__field
 								option(value="") Мужчина
 								option(value="") Женщина
 					.form-input-block._flex
 						.form-input-block__left
-							label.form-input-block__label Дата рождения:
+							label.form-input-block__label._no-margin Дата рождения:
 						.form-input-block__right._flex
 							.form-input-block-column._day
 								select.form-input-block__field._no-padding
@@ -148,14 +148,14 @@ mixin form-profile(data)
 									option(value="")													
 					.form-input-block._flex
 						.form-input-block__left
-							label.form-input-block__label Ориентация:
+							label.form-input-block__label._no-margin Ориентация:
 						.form-input-block__right
 							select.form-input-block__field
 								option(value="") Гетеро
 								option(value="")
 					.form-input-block._flex
 						.form-input-block__left
-							label.form-input-block__label Цель знакомств:
+							label.form-input-block__label._no-margin Цель знакомств:
 						.form-input-block__right
 							select.form-input-block__field
 								option(value="") Поиск знакомств
@@ -163,17 +163,28 @@ mixin form-profile(data)
 				
 				.form-input-block._flex
 					.form-input-block__left
-						label.form-input-block__label Телефон:*
+						label.form-input-block__label._no-margin Телефон:*
 					.form-input-block__right
 						input(type="text" value="" placeholder="8979879879879").form-input-block__field
 				.form-input-block._flex
 					.form-input-block__left
-						label.form-input-block__label Skype:
+						label.form-input-block__label._no-margin Skype:
 					.form-input-block__right
 						input(type="text" value="" placeholder="skype").form-input-block__field
 				.form-input-block._flex
 					.form-input-block__left
-						label.form-input-block__label ICQ:
+						label.form-input-block__label._no-margin ICQ:
 					.form-input-block__right
 						input(type="text" value="" placeholder="4987 654654").form-input-block__field									
-			input(type="submit" value="Зарегистрироваться").form-input-group__button._green._big
+			.form-input-group-block._no-bordered._my-profile-column-2
+				.form-input-group-block__title Аватарка
+				.form-input-group-block-right
+					.form-input-group-block-right__avatar
+						img(src="http://placehold.it/#{imageSize}" alt="")
+					.form-input-group-block-right-bottom
+						.form-input-group-block-right__button._gray Загрузить фото
+							form(action="" enctype="multipart/form-data" method="POST")
+								label(for="")
+								input(type="file" name="")
+						a(href="#" title="").form-input-group-block-right__second-button._gray
+					input(type="submit" value="Сохранить").form-input-group-block-right__third-button._green

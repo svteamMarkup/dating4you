@@ -1,19 +1,22 @@
-.gallery {}
+.gallery {
+	margin-bottom: 12px;
+}
 
 .gallery-top {
 	display: flex;
 	justify-content: space-between;
-	padding-bottom: 20px;
+	margin-bottom: 20px;
 	&__button {
 		@extend .button;
 		overflow: hidden;
 		position: relative;
 		font-size: 14px;
+		line-height: 1;
 		font-family: 'Lato-Medium';
 		padding: 11px 21px 7px 32px;
 		&:before {
 			position: absolute;
-			top: 11px;
+			top: 10px;
 			left: 10px;
 			@extend .fa;
 			@extend .fa-plus-circle;
@@ -24,7 +27,7 @@
 	display: flex;
 	justify-content: flex-start;
 	&__item {
-		margin-right: 45px;
+		margin-right: 42px;
 		font-family: 'Lato-Bold';
 		font-size: 27px;
 		color: $white;
@@ -36,6 +39,9 @@
 		&._active {
 			color: $red;
 			border-bottom-color: $red;
+		}
+		&._last {
+			margin-right: 0;
 		}
 	}
 }

@@ -24,9 +24,14 @@
 }	
 
 .form-input-block {
-	margin-bottom: 18px;
+	margin-bottom: 21px;
+	@media screen and(max-width: 760px) {
+		margin-bottom: 15px;
+	}	
 	&:last-child {
-		margin-bottom: 0;
+		@media screen and(min-width: 761px) {
+			margin-bottom: 0;
+		}
 	}
 	&__label {
 		font-size: 11px;
@@ -34,6 +39,9 @@
 		text-transform: uppercase;
 		display: block;
 		margin-bottom: 5px;
+		&._no-margin {
+			margin-bottom: 0;
+		}
 	}
 	&__field {
 		@extend .input-form;
@@ -89,6 +97,9 @@
 	display: flex;
 	justify-content: space-between;
 	margin-bottom: 14px;
+	@media screen and(max-width: 760px) {
+		display: block;
+	}
 	&__button {
 		@extend .button;
 		text-transform: uppercase;
@@ -109,6 +120,9 @@
 	&._side-bordered {
 		padding-right: 14px;
 	}
+	&._my-profile {
+		margin-bottom: 0;
+	}
 }
 .form-input-group-block {
 	border-left: 3px solid #82b147;
@@ -117,10 +131,71 @@
 	&__top {
 		margin-bottom: 59px;
 	}
+	&__title {
+		font-family: 'Lato-Medium';
+		font-size: 11px;
+		text-transform: uppercase;
+		padding-top: 9px;
+	}
 	&._no-bordered {
 		border-left: 0;
 		padding-left: 0;
 	}
+	&._my-profile-column-1 {
+		width: 324px;
+		margin-bottom: 0;
+	}
+	&._my-profile-column-2 {
+		margin-bottom: 0;
+		width: 304px;
+		display: flex;
+    	justify-content: space-between;
+	}
+}
+.form-input-group-block-right {
+	width: 220px;
+	&__avatar {
+		margin-bottom: 12px;
+		img {
+			display: block;
+		}
+	}
+	&__button {
+		@extend .button;
+		position: relative;
+		overflow: hidden;
+		padding: 9px 34px 6px 51px;
+		font-family: 'Lato-Medium';
+		line-height: 1;
+		font-size: 14px;
+		margin-right: 7px;
+		&:before {
+			@extend .fa;
+			@extend .fa-camera;
+			position: absolute;
+			top: 8px;
+			left: 28px;
+		}
+	}
+	&__second-button {
+		@extend .button;
+		width: 28px;
+		line-height: 27px;
+		@extend .fa;
+		@extend .fa-close;
+	}
+	&__third-button {
+		@extend .button;
+		padding-top: 21px;
+		text-transform: uppercase;
+		width: 100%;
+		line-height: 1;
+		padding-bottom: 16px;
+	}
+}
+.form-input-group-block-right-bottom {
+	display: flex;
+	margin-bottom: 38px;
 }
 //registration page
 .registration-form-column {
@@ -131,15 +206,26 @@
 .form-column {
 	width: 133px;
 	margin-right: 20px;
+	@media screen and(max-width: 760px) {
+		width: auto;
+		margin-right: 0;
+		margin-bottom: 8px;
+	}	
 	&:last-child {
 		margin-right: 0;
 	}
 	&._first {
 		width: 153px;
+		@media screen and(max-width: 760px) {
+			width: auto;
+		}		
 	}
 }
 .form-bottom {
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
+	@media screen and(max-width: 760px) {
+		display: block;
+	}	
 }
