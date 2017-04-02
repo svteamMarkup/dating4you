@@ -9,9 +9,17 @@
 		display: flex;
 		justify-content: space-between;
 		box-sizing: border-box;
+		@media screen and(max-width: 960px) {
+			padding-left: 10px;
+			padding-right: 10px;
+		}	
 		@media screen and(max-width: 760px) {
 			display: block;
 		}
+		@media screen and(max-width: 480px) {
+			text-align: center;
+
+		}	
 	}	
 	&__button {
 		@extend .button;			
@@ -27,6 +35,9 @@
 	font-family: 'Lato-Medium';
 	color: $white;
 	padding-top: 10px;
+	@media screen and(max-width: 480px) {
+		margin-bottom: 6px;
+	}
 	&__sub {
 		color: $red;
 	}
@@ -38,6 +49,10 @@
 		@extend .main;
 		padding: 26px 79px 15px;
 		box-sizing: border-box;
+		@media screen and(max-width: 960px) {
+			padding-left: 10px;
+			padding-right: 10px;
+		}	
 	}
 	&__text {
 		text-align: center;

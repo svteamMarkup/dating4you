@@ -8,6 +8,9 @@
 		display: flex;
 		justify-content: flex-start;
 		align-items: center;
+		@media screen and(max-width: 760px) {
+			justify-content: space-between;
+		}
 	}
 	&__logo {
 		text-indent: -9999px;
@@ -15,6 +18,7 @@
 		margin-right: 62px;
 		@media screen and(max-width: 760px) {
 			order: 2;
+			margin-right: 0;
 		}	
 	}
 }
@@ -23,6 +27,7 @@
 		margin-right: 81px; /*94px*/
 		@media screen and(max-width: 760px) {
 			order: 1;
+			margin-right: 0;
 		}	
 	}
 	&._profile {
