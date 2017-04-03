@@ -4,6 +4,9 @@
 	align-items: center;
 	position: absolute;
 	bottom: 0;
+	@media screen and(max-width: 960px) {
+		right: 0;
+	}
 	&__link {
 		color: $blue;
 		text-decoration: underline;

@@ -1,22 +1,39 @@
 .message-block {
 	display: flex;
 	justify-content: space-between;
-	padding-top: 23px;
-	padding-bottom: 23px;
-	border-top: 1px solid #d7d7d7;
+	@media screen and(max-width: 760px) {
+		display: block;
+	}
 	&__text {
 		font-size: 13px;
 		line-height: 20px;
 		width: 515px;
 		padding-top: 9px;
+		@media screen and(max-width: 1050px) {
+			font-size: 17px;
+			line-height: 26px;
+		}	
+		@media screen and(max-width: 760px) {
+			width: auto;
+		}	
+		@media screen and(max-width: 480px) {
+			padding-bottom: 5px;
+		}		
 	}
 }
 .message-block-left {
 	display: flex;
-	justify-content: space-between;
+	justify-content: flex-start;
 	align-items: center;
-	width: 183px;
+	width: 190px;
+	@media screen and(max-width: 760px) {
+		width: auto;
+	}	
 	&__image {
+		margin-right: 15px;
+		@media screen and(max-width: 760px) {
+			margin-right: 10px;
+		}	
 		img {
 			display: block;
 			border-radius: 50%;
@@ -53,6 +70,9 @@
 	font-size: 12px;
 	color: #7c7373;
 	display: flex;
+	@media screen and(max-width: 760px) {
+		font-size: 15px;
+	}		
 	&__item {
 		margin-right: 15px;
 		&._last {

@@ -6,6 +6,10 @@
 	&__image {
 		img {
 			display: block;
+			@media screen and(max-width: 960px) {
+				width: 100%;
+				height: auto;
+			}
 		}
 	}
 }
@@ -47,6 +51,22 @@
 	margin-bottom: 10px;
 	font-size: 12px;
 	color: #7c7373;
+	@media screen and(max-width: 960px) {
+		font-size: 14px;
+	}	
+	@media screen and(max-width: 760px) {
+		font-size: 15px;
+		width: 46%;
+		margin-left: auto;
+		margin-right: auto;
+		display: table;
+	}
+	@media screen and(max-width: 480px) {
+		display: flex;
+		width: auto;
+		margin-left: 0;
+		margin-right: 0;		
+	}	
 	&__item {
 		margin-right: 7px;
 		position: relative;
@@ -56,6 +76,12 @@
 			position: absolute;
 			top: 0;
 			right: 0;
+			@media screen and(max-width: 760px) {
+				display: none;
+			}	
+			@media screen and(max-width: 480px) {
+				display: block;
+			}	
 		}
 		&._last {
 			margin-right: 0;
@@ -76,12 +102,34 @@
 		font-family: 'Lato-Medium';
 		position: relative;
 		line-height: 1;
+		@media screen and(max-width: 960px) {
+			padding-left: 13px;
+			padding-right: 14px;
+		}	
+		@media screen and(max-width: 760px) {
+			padding-left: 13px;
+			padding-right: 8px;
+		}	
+		@media screen and(max-width: 480px) {
+			padding-left: 9px;
+			padding-right: 6px;
+		}
+		@media screen and(max-width: 320px) {
+			padding-left: 29px;
+			padding-right: 16px;
+		}		
 		&:before {
 			position: absolute;
 			top: 8px;
 			left: 8px;
 			@extend .fa;
 			@extend .fa-envelope-o;
+			@media screen and(max-width: 960px) {
+				display: none;
+			}
+			@media screen and(max-width: 320px) {
+				display: block;
+			}				
 		}		
 	}
 	&__button-second {
@@ -91,5 +139,11 @@
 		font-size: 14px;
 		@extend .fa;
 		@extend .fa-user-times;
+		@media screen and(max-width: 760px) {
+			line-height: 46px;
+		}			
+		@media screen and(max-width: 480px) {
+			line-height: 31px;
+		}				
 	}
 }

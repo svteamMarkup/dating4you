@@ -16,6 +16,7 @@
 			position: absolute;
 			top: 69px;
 			left: 0;
+			z-index: 99;
 			background-color: $darkGray;
 		}
 	}
@@ -25,13 +26,20 @@
 		margin-right: 39px;
 		text-shadow: 0 1px 2px $black;
 		display: block;
+		@media screen and(max-width: 960px) {
+			margin-right: 33px;
+		}	
 		@media screen and(max-width: 760px) {
 			margin-right: 0;
 			padding-top: 15px;
 			padding-bottom: 15px;
+			border-bottom: 1px solid $lightRed;
 		}	
 		&:last-child {
 			margin-right: 0;
+			@media screen and(max-width: 760px) {
+				border-bottom: none;
+			}	
 		}
 		&._active {
 			color: $red;

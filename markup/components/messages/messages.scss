@@ -4,6 +4,9 @@
 	display: flex;
 	justify-content: space-between;
 	padding-bottom: 18px;
+	@media screen and(max-width: 480px) {
+		display: block;
+	}
 	&__button {
 		@extend .button;
 		padding: 10px 12px 8px 32px;
@@ -23,5 +26,14 @@
 
 .messages-top-column {
 	width: 310px;
+	@media screen and(max-width: 480px) {
+		width: auto;
+		margin-bottom: 10px;
+	}	
 }
 
+.messages-comments-list-column {
+	padding-top: 23px;
+	padding-bottom: 23px;
+	border-top: 1px solid #d7d7d7;
+}

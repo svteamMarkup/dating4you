@@ -6,4 +6,16 @@
 .friends-column {
 	width: 239px;
 	margin-bottom: 11px;
+	@media screen and(max-width: 960px) {
+		width: 24%;
+	}
+	@media screen and(max-width: 480px) {
+		width: 48%;
+	}	
+	@media screen and(max-width: 320px) {
+		width: auto;
+		display: table;
+		margin-right: auto;
+		margin-left: auto;
+	}
 }
