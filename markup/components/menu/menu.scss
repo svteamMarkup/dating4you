@@ -1,9 +1,12 @@
 .menu {
 	&__mobile {
 		display: none;
-		@include bg($menu-mobile);
 		@media screen and(max-width: 760px) {
 			display: block;
+			@include bg($menu-mobile);
+			&._active {
+				@include bg($close);
+			}			
 		}
 	}
 	&__list {
@@ -16,7 +19,8 @@
 			position: absolute;
 			top: 69px;
 			left: 0;
-			z-index: 99;
+			box-shadow: 1px 1px 1px rgba($black, .7);
+			z-index: 100;
 			background-color: $darkGray;
 		}
 	}

@@ -31,9 +31,12 @@
 }	
 
 .form-top {
-	justify-content: space-between;
+  justify-content: space-between;
   display: flex;
   margin-bottom: 14px;
+  @media screen and(max-width: 480px) {
+  	display: block;
+  }
 }
 .form-input-block {
 	margin-bottom: 21px;
