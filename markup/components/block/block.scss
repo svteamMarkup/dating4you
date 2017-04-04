@@ -9,6 +9,9 @@
 	}
 	&._flex {
 		display: flex;
+		@media screen and(max-width: 480px) {
+			display: block;
+		}
 	}
 	&._my-profile {
 		padding: 49px 105px 41px 89px;
@@ -22,8 +25,18 @@
 
 .block-right {
 	background-color: $lightGray;
-	padding: 38px 85px 34px 85px;
+	padding: 38px 85px 34px;
 	width: 100%;
+	@media screen and(max-width: 1050px) {
+		padding-right: 20px;
+  	padding-left: 20px;
+  	padding-top: 30px;
+  	width: 30%;
+  }
+  @media screen and(max-width: 480px) {
+		padding-bottom: 20px;
+		width: auto;
+	}	
 	&__title {
 		@extend .side-bordered-title;
 		padding-top: 9px;
@@ -32,6 +45,9 @@
 		font-size: 11px;
 		font-family: 'Lato-Black';		
 		margin-bottom: 11px;
+		@media screen and(max-width: 1050px) {
+			font-size: 14px;
+		}	
 	}
 }
 .block-messages-row {

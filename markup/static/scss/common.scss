@@ -32,9 +32,6 @@ ol li, ul li {
         padding-right: 10px;
         padding-left: 10px;
     }
-    @media screen and(max-width: 760px) {
-        padding-top: 5px;
-    }    
     &__background-title {
         @extend .background-title;
         padding-top: 17px;

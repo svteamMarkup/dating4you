@@ -1,8 +1,9 @@
 .message-block-second {
 	display: flex;
 	justify-content: flex-start;
-	padding-top: 39px;
-	padding-bottom: 21px;
+	@media screen and(max-width: 480px) {
+		display: block;
+	}
 	&__image {
 		margin-right: 12px;
 		img {
@@ -14,11 +15,18 @@
 .message-block-second-text {
 	width: 750px;
 	padding-top: 4px;
+	@media screen and(max-width: 480px) {
+		width: auto;
+		padding-top: 12px;
+	}	
 	&__meta {
 		display: flex;
 		justify-content: flex-start;
 		align-items: center;
 		margin-bottom: 2px;
+		@media screen and(max-width: 480px) {
+			margin-bottom: 7px;
+		}			
 	}
 	&__name {
 		font-size: 17px;
@@ -29,6 +37,10 @@
 	&__comment {
 		font-size: 14px;
 		line-height: 20px;
+    @media screen and(max-width: 1050px) {
+    	font-size: 17px;
+    	line-height: 26px;		
+  	}
 	}
 }
 .message-block-second-text-date {
@@ -36,6 +48,9 @@
 	color: #7c7373;
 	display: flex;
 	justify-content: flex-start;
+	@media screen and(max-width: 760px) {
+		font-size: 14px;
+	}	
 	&__item {
 		margin-right: 14px;
 		&._last {

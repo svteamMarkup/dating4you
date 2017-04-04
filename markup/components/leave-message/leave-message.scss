@@ -9,7 +9,14 @@
 	align-items: center;
 	border-bottom: 1px solid #d7d7d7;
 	padding-bottom: 16px;
+	@media screen and(max-width: 480px) {
+		display: block;
+	}
 	&__control {
+		display: block;
+		@media screen and(max-width: 480px) {
+			margin-bottom: 10px;
+		}		
 		.fa {
 			font-size: 18px;
 			color: #a1a1a1;
@@ -19,6 +26,9 @@
 .leave-message-top-center {
 	display: flex;
 	justify-content: flex-start;
+	@media screen and(max-width: 480px) {
+		margin-bottom: 15px;
+	}
 	&__image {
 		margin-right: 14px;
 		img {
@@ -36,4 +46,21 @@
 
 .leave-message-top-column {
 	width: 222px;
+	@media screen and(max-width: 480px) {
+		width: auto;
+	}	
+}
+
+.leave-message-column {
+	padding-top: 39px;
+	padding-bottom: 21px;
+	@media screen and(max-width: 760px) {
+		padding-top: 15px;
+		padding-bottom: 5px;
+	}
+	&:last-child {
+		@media screen and(max-width: 760px) {
+			padding-bottom: 21px;
+		}
+	}
 }

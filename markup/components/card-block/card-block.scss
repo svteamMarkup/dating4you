@@ -15,11 +15,15 @@
 	margin-left: 10px;
 	position: relative;
 	width: 100%;
+	@media screen and(max-width: 960px)	{
+		padding-bottom: 24px;
+	}	
 	@media screen and(max-width: 480px)	{
 		margin-left: 5px;
 	}
 	@media screen and(max-width: 320px)	{
 		margin-left: 10px;
+		padding-bottom: 0;
 	}	
 	&__title {
 		font-size: 17px;
@@ -61,12 +65,21 @@
 		font-size: 13px;
 		color: #7c7373;
 		margin-left: 18px;
-		@media screen and(max-width: 320px)	{
-			font-size: 16px;
+		@media screen and(max-width: 1050px)	{
+			font-size: 15px;
 		}		
 		&._row {
 			margin-left: 0;
 			font-size: 12px;
+			@media screen and(max-width: 1050px) {
+				font-size: 15px;
+			}	
+			@media screen and(max-width: 480px) {
+				margin-left: 18px;
+			}				
+			@media screen and(max-width: 320px) {
+				font-size: 16px;
+			}					
 		}		
 	}
 	&__text {

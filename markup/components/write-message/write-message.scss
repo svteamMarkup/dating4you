@@ -1,14 +1,15 @@
 .write-message {
 	display: flex;
 	justify-content: flex-start;
-	padding-top: 20px;
-	padding-bottom: 22px;
-	padding-left: 19px;	
+	padding: 20px 16px 22px 19px;
 	background-color: $lightGray;
 	border-bottom-right-radius: 3px;
 	border-bottom-left-radius: 3px;
 	&__image {
 		margin-right: 14px;
+		@media screen and(max-width: 480px) {
+			margin-right: 5px;
+		}			
 		img {
 			display: block;
 			border-radius: 50%;
@@ -40,4 +41,13 @@
 .write-message-form-column {
 	width: 690px;
 	margin-right: 7px;
+	@media screen and(max-width: 760px) {
+		width: 566px;
+	}	
+	@media screen and(max-width: 480px) {
+		width: 297px;
+	}
+	@media screen and(max-width: 320px) {
+		width: auto;
+	}
 }
