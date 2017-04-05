@@ -1,29 +1,34 @@
 .pagination {
 	display: flex;
+
 	justify-content: center;
 	&__item {
 		width: 31px;
-		line-height: 31px;
-		background-color: #8d8d8d;
-		color: $darkGray;
-		font-size: 17px;
-		font-family: 'Lato-Black';
-		text-align: center;
-		box-shadow: 0 1px 2px rgba($black, .67);
 		margin-right: 9px;
+
+		text-align: center;
+
+		color: $darkGray;
+		background-color: #8d8d8d;
+		box-shadow: 0 1px 2px rgba($black, .67);
+
+		font-family: "Lato-Black";
+		font-size: 17px;
+		line-height: 31px;
 		&:last-child {
 			margin-right: 0;
 		}
 		&._icon {
 			font-size: 19px;
 			line-height: 31px;
+
 			@extend .fa;
 		}
 		&._prev {
-			@extend .fa-arrow-left;	
+			@extend .fa-arrow-left;
 		}
 		&._next {
 			@extend .fa-arrow-right;
-		}		
+		}
 	}
 }

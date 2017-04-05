@@ -4,23 +4,26 @@ body {
 
     color: $black;
     background-color: $darkGray;
-    font-family: 'Lato-Regular';
+
+    font-family: "Lato-Regular";
     font-size: $baseFontSize;
 }
 input,
 textarea {
+    resize: none;
+
     border: none;
     outline: none;
-    resize: none;
 }
-ol li, ul li {
+ol li,
+ul li {
     @include nl;
 }
 .main {
     width: 100%;
-    margin-left: auto;
-    margin-right: auto;
     max-width: 1015px;
+    margin-right: auto;
+    margin-left: auto;
     padding-top: 20px;
     padding-bottom: 145px;
     @media screen and(max-width: 1050px) {
@@ -33,10 +36,11 @@ ol li, ul li {
         padding-left: 10px;
     }
     &__background-title {
-        @extend .background-title;
+        margin-bottom: 15px;
         padding-top: 17px;
         padding-bottom: 13px;
-        margin-bottom: 15px;
+
+        @extend .background-title;
     }
 }
 
@@ -57,4 +61,3 @@ ol li, ul li {
         display: block;
     }
 }
-

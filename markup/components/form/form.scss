@@ -1,84 +1,96 @@
 .form {
 	&__heading-title {
-		font-size: 18px;
-		font-family: 'Lato-Black';
-		color: $red;
-		text-transform: uppercase;
-		padding-bottom: 9px;
-		border-bottom: 1px solid #ccc;
 		margin-bottom: 15px;
+		padding-bottom: 9px;
+
+		text-transform: uppercase;
+
+		color: $red;
+		border-bottom: 1px solid #ccc;
+
+		font-family: "Lato-Black";
+		font-size: 18px;
 		line-height: 28px;
 		&._no-bordered {
-			line-height: 28px;
-			border-bottom: 0;
 			padding-bottom: 0;
+
+			border-bottom: 0;
+
+			line-height: 28px;
 		}
 	}
 	&__title {
-		font-size: 15px;
 		margin-bottom: 31px;
-		@media screen and(max-width: 1050px)	{
+
+		font-size: 15px;
+		@media screen and(max-width: 1050px) {
 			font-size: 16px;
 			line-height: 26px;
-		}	
-		@media screen and(max-width: 480px)	{
+		}
+		@media screen and(max-width: 480px) {
 			margin-bottom: 20px;
-		}		
+		}
 		&._big {
 			@extend .big-title;
 		}
-	}	
-}	
+	}
+}
 
 .form-top {
-  justify-content: space-between;
-  display: flex;
-  margin-bottom: 14px;
-  @media screen and(max-width: 480px) {
-  	display: block;
-  }
+	display: flex;
+
+	margin-bottom: 14px;
+
+	justify-content: space-between;
+	@media screen and(max-width: 480px) {
+		display: block;
+	}
 }
 .form-input-block {
 	margin-bottom: 21px;
 	@media screen and(max-width: 480px) {
 		margin-bottom: 15px;
-	}	
+	}
 	&:last-child {
 		@media screen and(min-width: 761px) {
 			margin-bottom: 0;
 		}
 	}
 	&__label {
-		font-size: 11px;
-		font-family: 'Lato-Medium';
-		text-transform: uppercase;
 		display: block;
+
 		margin-bottom: 5px;
+
+		text-transform: uppercase;
+
+		font-family: "Lato-Medium";
+		font-size: 11px;
 		@media screen and(max-width: 1050px) {
 			font-size: 15px;
-		}		
+		}
 		&._no-margin {
 			margin-bottom: 0;
-			@media screen and(max-width: 480px)	{
+			@media screen and(max-width: 480px) {
 				margin-bottom: 5px;
 			}
 		}
 	}
 	&__field {
-		@extend .input-form;
 		width: 100%;
 		height: 24px;
 		padding-left: 10px;
-		@media screen and(max-width: 1050px)	{
+
+		@extend .input-form;
+		@media screen and(max-width: 1050px) {
 			height: 30px;
-		}	
+		}
 		&._no-padding {
 			padding-left: 6px;
 		}
 	}
 	&__left {
-		margin-right: 18px;
 		width: 182px;
+		margin-right: 18px;
 	}
 	&__right {
 		width: 100%;
@@ -91,15 +103,16 @@
 	}
 	&._flex {
 		display: flex;
+
 		align-items: center;
-		@media screen and(max-width: 480px)	{
+		@media screen and(max-width: 480px) {
 			display: block;
-		}		
+		}
 	}
 }
 .form-input-block-column {
-	margin-right: 7px;
 	width: 100%;
+	margin-right: 7px;
 	&._day {
 		width: 40px;
 		@media screen and(max-width: 480px) {
@@ -110,51 +123,56 @@
 		width: 87px;
 		@media screen and(max-width: 480px) {
 			width: 30%;
-		}		
+		}
 	}
 	&._year {
 		width: 54px;
 		@media screen and(max-width: 480px) {
 			width: 30%;
-		}		
-	}	
+		}
+	}
 	&:last-child {
 		margin-right: 0;
 	}
 }
 .form-checkbox-block {
 	&__label {
+		font-family: "Lato-Medium";
 		font-size: 14px;
-		font-family: 'Lato-Medium';
-		@media screen and(max-width: 760px) {
+		@media screen and(max-width: 768px) {
 			font-size: 16px;
 		}
 		&:before {
 			margin-top: -3px;
-    		margin-right: 4px;		
+			margin-right: 4px;
 		}
 	}
 }
 .form-input-group {
 	display: flex;
+
 	justify-content: space-between;
 	@media screen and(max-width: 480px) {
 		display: block;
 	}
 	&__button {
-		@extend .button;
-		text-transform: uppercase;
-		font-size: 13px;
-		padding: 13px 14px 11px 17px;
-		line-height: 1;
 		width: 100%;
-		@media screen and(max-width: 760px) {
+		padding: 13px 14px 11px 17px;
+
+		text-transform: uppercase;
+
+		font-size: 13px;
+		line-height: 1;
+
+		@extend .button;
+		@media screen and(max-width: 768px) {
 			font-size: 15px;
-		}		
+		}
 		&._big {
 			padding-top: 20px;
 			padding-bottom: 20px;
-			font-family: 'Lato-Bold';
+
+			font-family: "Lato-Bold";
 			font-size: 19px;
 		}
 	}
@@ -172,67 +190,76 @@
 	}
 }
 .form-input-group-block {
-	border-left: 3px solid #82b147;
-	padding-left: 20px;
 	margin-bottom: 45px;
-	@media screen and(max-width: 480px)	{
+	padding-left: 20px;
+
+	border-left: 3px solid #82b147;
+	@media screen and(max-width: 480px) {
 		margin-bottom: 25px;
-	}	
+	}
 	&__top {
 		margin-bottom: 59px;
-		@media screen and(max-width: 480px)	{		
+		@media screen and(max-width: 480px) {
 			margin-bottom: 39px;
-		}	
+		}
 	}
 	&__title {
-		font-family: 'Lato-Medium';
-		font-size: 11px;
-		text-transform: uppercase;
 		padding-top: 9px;
-		@media screen and(max-width: 1050px)	{
+
+		text-transform: uppercase;
+
+		font-family: "Lato-Medium";
+		font-size: 11px;
+		@media screen and(max-width: 1050px) {
 			font-size: 14px;
-		}	
-		@media screen and(max-width: 480px){
-			text-align: center;
+		}
+		@media screen and(max-width: 480px) {
 			margin-bottom: 5px;
+
+			text-align: center;
 		}
 	}
 	&._no-bordered {
-		border-left: 0;
 		padding-left: 0;
+
+		border-left: 0;
 	}
 	&._my-profile-column-1 {
 		width: 324px;
 		margin-bottom: 0;
-		@media screen and(max-width: 1050px)	{
+		@media screen and(max-width: 1050px) {
 			width: 60%;
 		}
-		@media screen and(max-width: 960px)	{
+		@media screen and(max-width: 960px) {
 			width: 52%;
-		}	
-		@media screen and(max-width: 480px)	{
+		}
+		@media screen and(max-width: 480px) {
 			width: 100%;
-		}			
+		}
 	}
 	&._my-profile-column-2 {
-		margin-bottom: 0;
-		width: 304px;
 		display: flex;
-    justify-content: space-between;
-		@media screen and(max-width: 480px)	{
-			width: 100%;
+
+		width: 304px;
+		margin-bottom: 0;
+
+		justify-content: space-between;
+		@media screen and(max-width: 480px) {
 			display: block;
+
+			width: 100%;
 		}
 	}
 }
 .form-input-group-block-right {
 	width: 220px;
-	@media screen and(max-width: 480px)	{
-		width: auto;
+	@media screen and(max-width: 480px) {
 		display: table;
-		margin-left: auto;
+
+		width: auto;
 		margin-right: auto;
-	}	
+		margin-left: auto;
+	}
 	&__avatar {
 		margin-bottom: 12px;
 		img {
@@ -240,93 +267,104 @@
 		}
 	}
 	&__button {
-		@extend .button;
 		position: relative;
+
 		overflow: hidden;
-		padding: 9px 34px 6px 51px;
-		font-family: 'Lato-Medium';
-		line-height: 1;
-		font-size: 14px;
+
 		margin-right: 7px;
+		padding: 9px 34px 6px 51px;
+
+		font-family: "Lato-Medium";
+		font-size: 14px;
+		line-height: 1;
+
+		@extend .button;
 		&:before {
-			@extend .fa;
-			@extend .fa-camera;
 			position: absolute;
 			top: 8px;
 			left: 28px;
+
+			@extend .fa-camera;
+			@extend .fa;
 		}
 	}
 	&__second-button {
-		@extend .button;
 		width: 28px;
+
 		line-height: 27px;
-		@extend .fa;
+
 		@extend .fa-close;
+		@extend .fa;
+		@extend .button;
 	}
 	&__third-button {
-		@extend .button;
-		padding-top: 21px;
-		text-transform: uppercase;
 		width: 100%;
-		line-height: 1;
+		padding-top: 21px;
 		padding-bottom: 16px;
+
+		text-transform: uppercase;
+
+		line-height: 1;
+
+		@extend .button;
 	}
 }
 .form-input-group-block-right-bottom {
 	display: flex;
+
 	margin-bottom: 38px;
 	@media screen and(max-width: 1050px) {
 		margin-bottom: 15px;
-	}	
+	}
 	@media screen and(max-width: 480px) {
 		justify-content: center;
 	}
-	
 }
 //registration page
 .block-registration-form-column {
+	box-sizing: border-box;
 	width: 498px;
 	padding: 49px 71px 31px 65px;
-	box-sizing: border-box;
 	@media screen and(max-width: 1050px) {
+		width: 70%;
+		padding-top: 30px;
 		padding-right: 20px;
-  	padding-left: 20px;
-  	padding-top: 30px;
-  	width: 70%;
+		padding-left: 20px;
 	}
 	@media screen and(max-width: 480px) {
 		width: auto;
-	}	
+	}
 }
 .form-column {
 	width: 133px;
 	margin-right: 20px;
-	@media screen and(max-width: 760px) {
+	@media screen and(max-width: 768px) {
 		width: 30%;
 	}
 	@media screen and(max-width: 480px) {
+		width: auto;
 		margin-right: 0;
 		margin-bottom: 13px;
-		width: auto;
-	}	
+	}
 	&:last-child {
 		margin-right: 0;
 	}
 	&._first {
 		width: 153px;
-		@media screen and(max-width: 760px) {
+		@media screen and(max-width: 768px) {
 			width: 30%;
-		}		
+		}
 		@media screen and(max-width: 480px) {
 			width: auto;
-		}				
+		}
 	}
 }
 .form-bottom {
 	display: flex;
-	justify-content: space-between;
+
 	align-items: center;
+	justify-content: space-between;
 	@media screen and(max-width: 480px) {
 		display: block;
-	}	
+	}
 }

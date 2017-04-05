@@ -1,8 +1,10 @@
 .cards {
 	display: flex;
+
+	margin-bottom: 7px;
+
 	flex-wrap: wrap;
 	justify-content: space-between;
-	margin-bottom: 7px;
 	&._unflex {
 		display: block;
 		@media screen and(max-width: 480px) {
@@ -10,26 +12,27 @@
 		}
 		@media screen and(max-width: 320px) {
 			display: block;
-		}		
+		}
 	}
 }
 .cards-column {
+	box-sizing: border-box;
 	width: 238px;
 	margin-bottom: 20px;
 	padding: 10px 29px 10px 10px;
-	box-sizing: border-box;
+
 	border-radius: 3px;
 	background-color: $white;
 	box-shadow: 1px 1px 1px rgba($black, .7);
 	@media screen and(max-width: 960px) {
 		width: 24%;
 	}
-	@media screen and(max-width: 760px) {
+	@media screen and(max-width: 768px) {
 		padding-right: 5px;
 	}
 	@media screen and(max-width: 480px) {
-		padding-right: 0;
 		width: 49%;
+		padding-right: 0;
 	}
 	@media screen and(max-width: 320px) {
 		width: 100%;
@@ -37,19 +40,20 @@
 	}
 }
 .cards-row {
-	width: 100%;
-	padding: 9px 19px 10px 8px;
-	background-color: $white;
-	border-radius: 3px;
-	margin-bottom: 10px;
 	box-sizing: border-box;
+	width: 100%;
+	margin-bottom: 10px;
+	padding: 9px 19px 10px 8px;
+
 	border: 1px solid #c7c7c7;
+	border-radius: 3px;
+	background-color: $white;
 	@media screen and(max-width: 480px) {
 		width: 49%;
 		padding-right: 0;
-	}	
+	}
 	@media screen and(max-width: 320px) {
 		width: auto;
 		padding-right: 19px;
-	}	
+	}
 }

@@ -1,49 +1,60 @@
 .menu {
 	&__mobile {
 		display: none;
-		@media screen and(max-width: 760px) {
+		@media screen and(max-width: 768px) {
 			display: block;
+
 			@include bg($menu-mobile);
 			&._active {
 				@include bg($close);
-			}			
+			}
 		}
 	}
 	&__list {
 		display: flex;
+
 		justify-content: space-between;
-		@media screen and(max-width: 760px) {
-			display: none;
-			width: 100%;
-			text-align: center;
+		@media screen and(max-width: 768px) {
 			position: absolute;
+			z-index: 100;
 			top: 69px;
 			left: 0;
-			box-shadow: 1px 1px 1px rgba($black, .7);
-			z-index: 100;
+
+			display: none;
+
+			width: 100%;
+
+			text-align: center;
+
 			background-color: $darkGray;
+			box-shadow: 1px 1px 1px rgba($black, .7);
 		}
 	}
 	&__item {
-		font-size: 14px;
-		text-transform: uppercase;
-		margin-right: 39px;
-		text-shadow: 0 1px 2px $black;
 		display: block;
+
+		margin-right: 39px;
+
+		text-transform: uppercase;
+
+		text-shadow: 0 1px 2px $black;
+
+		font-size: 14px;
 		@media screen and(max-width: 960px) {
 			margin-right: 33px;
-		}	
-		@media screen and(max-width: 760px) {
+		}
+		@media screen and(max-width: 768px) {
 			margin-right: 0;
 			padding-top: 15px;
 			padding-bottom: 15px;
+
 			border-bottom: 1px solid $lightRed;
-		}	
+		}
 		&:last-child {
 			margin-right: 0;
-			@media screen and(max-width: 760px) {
+			@media screen and(max-width: 768px) {
 				border-bottom: none;
-			}	
+			}
 		}
 		&._active {
 			color: $red;

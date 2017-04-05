@@ -1,15 +1,18 @@
 .search {
 	position: relative;
 	&__input {
-		@extend .input-form;
 		width: 100%;
 		height: 30px;
 		padding-left: 13px;
+
+		@extend .input-form;
 	}
 	&__submit {
-		@include absoluteVerticalCenter;
 		right: 10px;
+
 		height: 100%;
+
+		@include absoluteVerticalCenter;
 		.fa {
 			font-size: 11px;
 		}

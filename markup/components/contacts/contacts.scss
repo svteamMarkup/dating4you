@@ -1,10 +1,12 @@
 .contacts {
-	display: flex;
-	justify-content: flex-start;
-	align-items: center;
 	position: absolute;
 	bottom: 0;
-	@media screen and(max-width: 760px) {
+
+	display: flex;
+
+	align-items: center;
+	justify-content: flex-start;
+	@media screen and(max-width: 768px) {
 		left: 0;
 	}
 	@media screen and(max-width: 320px) {
@@ -12,13 +14,17 @@
 		left: initial;
 	}
 	&__link {
-		color: $blue;
-		text-decoration: underline;
 		padding-left: 9px;
+
+		text-decoration: underline;
+
+		color: $blue;
+
 		line-height: 1;
 		&:hover {
-			color: $blue;
 			text-decoration: none;
+
+			color: $blue;
 		}
 	}
 	&._right {
@@ -26,18 +32,20 @@
 	}
 }
 .contacts-item {
-	background-color: #e5e5e5;
-	height: 20px;
-	width: 20px;
 	position: relative;
+
+	width: 20px;
+	height: 20px;
 	margin-right: 5px;
+
+	background-color: #e5e5e5;
 	&._last {
 		margin-right: 0;
 	}
 	&__link {
 		display: block;
-		@include absoluteCenter;
 
+		@include absoluteCenter;
 		&._icq {
 			@include bg($icq);
 		}
@@ -46,6 +54,6 @@
 		}
 		&._phone {
 			@include bg($phone);
-		}		
+		}
 	}
 }

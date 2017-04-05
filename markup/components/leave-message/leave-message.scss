@@ -5,10 +5,13 @@
 
 .leave-message-top {
 	display: flex;
-	justify-content: space-between;
-	align-items: center;
-	border-bottom: 1px solid #d7d7d7;
+
 	padding-bottom: 16px;
+
+	border-bottom: 1px solid #d7d7d7;
+
+	align-items: center;
+	justify-content: space-between;
 	@media screen and(max-width: 480px) {
 		display: block;
 	}
@@ -16,15 +19,17 @@
 		display: block;
 		@media screen and(max-width: 480px) {
 			margin-bottom: 10px;
-		}		
+		}
 		.fa {
-			font-size: 18px;
 			color: #a1a1a1;
+
+			font-size: 18px;
 		}
 	}
 }
 .leave-message-top-center {
 	display: flex;
+
 	justify-content: flex-start;
 	@media screen and(max-width: 480px) {
 		margin-bottom: 15px;
@@ -33,14 +38,17 @@
 		margin-right: 14px;
 		img {
 			display: block;
+
 			border-radius: 50%;
 		}
 	}
 	&__name {
-		font-size: 27px;
-		font-family: 'Lato-Bold';
-		color: $black;
 		padding-top: 4px;
+
+		color: $black;
+
+		font-family: "Lato-Bold";
+		font-size: 27px;
 	}
 }
 
@@ -48,18 +56,18 @@
 	width: 222px;
 	@media screen and(max-width: 480px) {
 		width: auto;
-	}	
+	}
 }
 
 .leave-message-column {
 	padding-top: 39px;
 	padding-bottom: 21px;
-	@media screen and(max-width: 760px) {
+	@media screen and(max-width: 768px) {
 		padding-top: 15px;
 		padding-bottom: 5px;
 	}
 	&:last-child {
-		@media screen and(max-width: 760px) {
+		@media screen and(max-width: 768px) {
 			padding-bottom: 21px;
 		}
 	}

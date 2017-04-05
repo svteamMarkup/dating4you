@@ -1,7 +1,8 @@
 .friends {
 	display: flex;
-	justify-content: space-between;
+
 	flex-wrap: wrap;
+	justify-content: space-between;
 }
 .friends-column {
 	width: 239px;
@@ -11,10 +12,11 @@
 	}
 	@media screen and(max-width: 480px) {
 		width: 48%;
-	}	
+	}
 	@media screen and(max-width: 320px) {
-		width: auto;
 		display: table;
+
+		width: auto;
 		margin-right: auto;
 		margin-left: auto;
 	}

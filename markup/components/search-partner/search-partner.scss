@@ -1,50 +1,58 @@
 .search-partner {
 	display: flex;
-	justify-content: space-between;
-	border-left: 3px solid $red;
+
 	margin-bottom: 19px;
-	@media screen and(max-width: 760px) {
+
+	border-left: 3px solid $red;
+
+	justify-content: space-between;
+	@media screen and(max-width: 768px) {
 		display: block;
 	}
 	&__title {
-		font-size: 25px;
-		line-height: 27px;
-		font-family: 'Lato-Bold';
-		color: $white;
 		margin-top: 0;
 		margin-bottom: 16px;
+
+		color: $white;
+
+		font-family: "Lato-Bold";
+		font-size: 25px;
+		line-height: 27px;
 	}
 	&__text {
+		margin-bottom: 21px;
+
+		color: #9f9f9f;
+
 		font-size: 15px;
 		line-height: 20px;
-		color: #9f9f9f;
-		margin-bottom: 21px;
-		@media screen and(max-width: 760px) {
+		@media screen and(max-width: 768px) {
 			font-size: 17px;
 			line-height: 26px;
 		}
 	}
 	&__real-ankets {
 		color: #9f9f9f;
-		font-family: 'Lato-Bold';
-		font-size: 15px;	
-		@media screen and(max-width: 760px) {
+
+		font-family: "Lato-Bold";
+		font-size: 15px;
+		@media screen and(max-width: 768px) {
 			font-size: 17px;
 			line-height: 26px;
-		}		
+		}
 	}
 }
 .search-partner-column {
 	&._first {
 		width: 461px;
-		margin-left: 23px;
 		margin-top: 13px;
+		margin-left: 23px;
 		padding-bottom: 13px;
 		@media screen and(max-width: 960px) {
-			margin-left: 11px;
 			margin-top: 0;
-		}		
-		@media screen and(max-width: 760px) {
+			margin-left: 11px;
+		}
+		@media screen and(max-width: 768px) {
 			width: auto;
 			margin-left: 23px;
 		}

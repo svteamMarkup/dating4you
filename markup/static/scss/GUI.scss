@@ -1,121 +1,140 @@
 ::-webkit-input-placeholder {
-    color: $black;
+	color: $black;
 }
 ::-moz-placeholder {
-    color: $black;
+	color: $black;
 }
 :-moz-placeholder {
-    color: $black;
+	color: $black;
 }
 :-ms-input-placeholder {
-    color: $black;
+	color: $black;
 }
 a {
-    color: $white;
-    text-decoration: none;
-    @include transition;
-    &:hover {
-        color: $red;
-    }
+	text-decoration: none;
+
+	color: $white;
+
+	@include transition;
+	&:hover {
+		color: $red;
+	}
 }
 .button {
-    display: inline-block;
+	display: inline-block;
 
-    cursor: pointer;
-    text-decoration: none;
-    text-align: center;
-    
-    box-sizing: border-box;
-    @include transition;
-    
-    &._green {
-        background-color: $green;
-        color: $white;
-        box-shadow: 0 1px 0 #b2de7c inset, 0 1px 2px rgba($black, .67);
-        &:hover {
-            background-color: darken($green, 5%);
-        }
-    }
-    &._gray {
-        background-color: $lightGray;
-        color: $darkGray;
-        box-shadow: 0 1px 2px rgba($black, .67);
-        &:hover {
-            background-color: darken($lightGray, 5%);
-        }
-    }    
+	box-sizing: border-box;
+
+	cursor: pointer;
+	text-align: center;
+	text-decoration: none;
+
+	@include transition;
+	&._green {
+		color: $white;
+		background-color: $green;
+		box-shadow: 0 1px 0 #b2de7c inset, 0 1px 2px rgba($black, .67);
+		&:hover {
+			background-color: darken($green, 5%);
+		}
+	}
+	&._gray {
+		color: $darkGray;
+		background-color: $lightGray;
+		box-shadow: 0 1px 2px rgba($black, .67);
+		&:hover {
+			background-color: darken($lightGray, 5%);
+		}
+	}
 }
 .big-title {
-    font-size: 27px;
-    font-family: 'Lato-Bold';
+	font-family: "Lato-Bold";
+	font-size: 27px;
 }
 .side-bordered-title {
-    color: $red;
-    border-left: 3px solid $red;
-    text-transform: uppercase;
-    background-color: $lightGray;
-    line-height: 1;
-    &._green {
-        border-left-color: $green;
-        color: $green;
-        background-color: #e1e1e1;
-    }
+	text-transform: uppercase;
+
+	color: $red;
+	border-left: 3px solid $red;
+	background-color: $lightGray;
+
+	line-height: 1;
+	&._green {
+		color: $green;
+		border-left-color: $green;
+		background-color: #e1e1e1;
+	}
 }
 .background-title {
-    color: $red;
-    font-family: 'Lato-Medium';
-    text-align: center;
-    text-transform: uppercase;
-    font-size: 14px;
-    background-color: $lightBlack;
-    text-shadow: 0 1px 2px $black;
-    border-radius: 3px;    
+	text-align: center;
+	text-transform: uppercase;
+
+	color: $red;
+	border-radius: 3px;
+	background-color: $lightBlack;
+	text-shadow: 0 1px 2px $black;
+
+	font-family: "Lato-Medium";
+	font-size: 14px;
 }
 .input-form {
-    box-sizing: border-box;
-    border: none;
-    background-color: #efefef;
-    box-shadow: 0 1px 0 rgba($darkGray, .2) inset;
-    text-transform: uppercase;
-    font-size: 11px;
-    font-family: 'Lato-Medium';
-}
+	box-sizing: border-box;
 
+	text-transform: uppercase;
+
+	border: none;
+	background-color: #efefef;
+	box-shadow: 0 1px 0 rgba($darkGray, .2) inset;
+
+	font-family: "Lato-Medium";
+	font-size: 11px;
+}
 
 input[type="checkbox"] {
-    display: none;
+	display: none;
 }
 input[type="checkbox"] + label:before {
-    content: '';
-    @extend .fa;    
-    width: 12px;
-    height: 12px;
-    border: 1px solid #959a9c;
-    vertical-align: middle;
-    cursor: pointer;
+	width: 12px;
+	height: 12px;
+
+	content: "";
+	cursor: pointer;
+	vertical-align: middle;
+
+	border: 1px solid #959a9c;
+
+	@extend .fa;
 }
 input[type="checkbox"]:checked + label:before {
-    @extend .fa-check;
+	@extend .fa-check;
 }
 
 input[type="file"] {
-    cursor: inherit;
-    display: block;
-    font-size: 999px;
-    min-height: 100%;
-    min-width: 100%;
-    opacity: 0;
-    position: absolute;
-    right: 0;
-    text-align: right;
-    top: 0;
-}    
+	position: absolute;
+	top: 0;
+	right: 0;
+
+	display: block;
+
+	min-width: 100%;
+	min-height: 100%;
+
+	cursor: inherit;
+	text-align: right;
+
+	opacity: 0;
+
+	font-size: 999px;
+}
 
 button {
-    -webkit-appearance: none;
-    background: 0 0;
-    padding: 0;
-    border: 0;
-    border-radius: 0;
-    line-height: 1;
-}    
+	padding: 0;
+
+	border: 0;
+	border-radius: 0;
+	background: 0 0;
+
+	line-height: 1;
+
+	appearance: none;
+}

@@ -1,44 +1,50 @@
-.footer {
 
-}
 .footer-top {
 	background-color: $lightBlack;
 	&__wrapper {
-		@extend .main;
-		padding: 8px 50px;
 		display: flex;
-		justify-content: space-between;
+
 		box-sizing: border-box;
+		padding: 8px 50px;
+
+		@extend .main;
+		justify-content: space-between;
 		@media screen and(max-width: 960px) {
-			padding-left: 10px;
 			padding-right: 10px;
-		}	
-		@media screen and(max-width: 760px) {
+			padding-left: 10px;
+		}
+		@media screen and(max-width: 768px) {
 			display: block;
 		}
-		@media screen and(max-width: 760px) {
+		@media screen and(max-width: 768px) {
 			text-align: center;
-		}	
-	}	
+		}
+	}
 	&__button {
-		@extend .button;			
 		padding: 10px 12px 7px;
-		line-height: 1;
-		font-size: 14px;
-		font-family: 'Lato-Medium';
+
 		text-transform: uppercase;
-		@media screen and(max-width: 760px)	{
+
+		font-family: "Lato-Medium";
+		font-size: 14px;
+		line-height: 1;
+
+		@extend .button;
+		@media screen and(max-width: 768px) {
 			font-size: 16px;
-		}		
-	}	
+		}
+	}
 }
 .footer-top-title {
-	font-size: 14px;
-	font-family: 'Lato-Medium';
-	color: $white;
 	padding-top: 10px;
-	@media screen and(max-width: 760px) {
+
+	color: $white;
+
+	font-family: "Lato-Medium";
+	font-size: 14px;
+	@media screen and(max-width: 768px) {
 		margin-bottom: 6px;
+
 		font-size: 15px;
 	}
 	&__sub {
@@ -49,24 +55,28 @@
 .footer-bottom {
 	background-color: #1f1f1f;
 	&__wrapper {
-		@extend .main;
-		padding: 26px 79px 15px;
 		box-sizing: border-box;
+		padding: 26px 79px 15px;
+
+		@extend .main;
 		@media screen and(max-width: 960px) {
-			padding-left: 10px;
 			padding-right: 10px;
-		}	
+			padding-left: 10px;
+		}
 	}
 	&__text {
-		text-align: center;
-		color: #4d4d4d;
-		font-family: 'Lato-Medium';
-		font-size: 13px;
 		margin-bottom: 15px;
+
+		text-align: center;
+
+		color: #4d4d4d;
+
+		font-family: "Lato-Medium";
+		font-size: 13px;
 		@media screen and(max-width: 960px) {
 			font-size: 15px;
-		}	
-		@media screen and(max-width: 760px) {
+		}
+		@media screen and(max-width: 768px) {
 			font-size: 17px;
 			line-height: 26px;
 		}

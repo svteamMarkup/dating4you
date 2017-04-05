@@ -1,11 +1,12 @@
 .block {
+	margin-bottom: 30px;
+
+	border-radius: 3px;
 	background-color: $white;
 	box-shadow: 1px 1px 1px rgba($black, .7);
-	border-radius: 3px;
-	margin-bottom: 30px;
-	&._search-partner{
-		padding: 17px 20px;
+	&._search-partner {
 		margin-bottom: 0;
+		padding: 17px 20px;
 	}
 	&._flex {
 		display: flex;
@@ -15,39 +16,43 @@
 	}
 	&._my-profile {
 		padding: 49px 105px 41px 89px;
-		@media screen and(max-width: 1050px)	{
+		@media screen and(max-width: 1050px) {
+			padding-top: 30px;
 			padding-right: 20px;
 			padding-left: 20px;
-			padding-top: 30px;
-		}	
+		}
 	}
 }
 
 .block-right {
-	background-color: $lightGray;
-	padding: 38px 85px 34px;
 	width: 100%;
+	padding: 38px 85px 34px;
+
+	border-radius: 3px;
+	background-color: $lightGray;
 	@media screen and(max-width: 1050px) {
+		width: 30%;
+		padding-top: 30px;
 		padding-right: 20px;
-  	padding-left: 20px;
-  	padding-top: 30px;
-  	width: 30%;
-  }
-  @media screen and(max-width: 480px) {
-		padding-bottom: 20px;
+		padding-left: 20px;
+	}
+	@media screen and(max-width: 480px) {
 		width: auto;
-	}	
+		padding-bottom: 20px;
+	}
 	&__title {
-		@extend .side-bordered-title;
+		margin-bottom: 11px;
 		padding-top: 9px;
 		padding-bottom: 6px;
 		padding-left: 10px;
+
+		font-family: "Lato-Black";
 		font-size: 11px;
-		font-family: 'Lato-Black';		
-		margin-bottom: 11px;
+
+		@extend .side-bordered-title;
 		@media screen and(max-width: 1050px) {
 			font-size: 14px;
-		}	
+		}
 	}
 }
 .block-messages-row {
@@ -60,7 +65,7 @@
 
 .block-my-profile-row {
 	width: 825px;
-	@media screen and(max-width: 1050px)	{
+	@media screen and(max-width: 1050px) {
 		width: auto;
 	}
 }

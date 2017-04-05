@@ -2,26 +2,30 @@
 	background-image: url(%=static=%general/header-bg.png);
 	background-repeat: repeat;
 	&__wrapper {
-		@extend .main;
+		display: flex;
+
 		padding-top: 19px;
 		padding-bottom: 16px;
-		display: flex;
-		justify-content: flex-start;
+
 		align-items: center;
+		@extend .main;
+		justify-content: flex-start;
 		@media screen and(max-width: 960px) {
 			justify-content: space-between;
 		}
 	}
 	&__logo {
-		text-indent: -9999px;
-		@include bg($logo);
 		margin-right: 62px;
+
+		text-indent: -9999px;
+
+		@include bg($logo);
 		@media screen and(max-width: 960px) {
 			margin-right: 0;
-		}		
-		@media screen and(max-width: 760px) {
+		}
+		@media screen and(max-width: 768px) {
 			order: 2;
-		}	
+		}
 	}
 }
 .header-column {
@@ -29,14 +33,14 @@
 		margin-right: 81px;
 		@media screen and(max-width: 960px) {
 			margin-right: 0;
-		}	
-		@media screen and(max-width: 760px) {
+		}
+		@media screen and(max-width: 768px) {
 			order: 1;
-		}	
+		}
 	}
 	&._profile {
-		@media screen and(max-width: 760px) {
+		@media screen and(max-width: 768px) {
 			order: 3;
-		}		
+		}
 	}
 }

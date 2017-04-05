@@ -1,49 +1,58 @@
 .write-message {
 	display: flex;
-	justify-content: flex-start;
+
 	padding: 20px 16px 22px 19px;
-	background-color: $lightGray;
+
 	border-bottom-right-radius: 3px;
 	border-bottom-left-radius: 3px;
+	background-color: $lightGray;
+
+	justify-content: flex-start;
 	&__image {
 		margin-right: 14px;
 		@media screen and(max-width: 480px) {
 			margin-right: 5px;
-		}			
+		}
 		img {
 			display: block;
+
 			border-radius: 50%;
 		}
 	}
-
 }
 .write-message-form {
 	display: flex;
-	justify-content: flex-start;
+
 	padding-top: 11px;
+
+	justify-content: flex-start;
 	&__textarea {
-		@extend .input-form;
 		width: 100%;
 		height: 37px;
-		background-color: $white;
 		padding-left: 13px;
+
+		background-color: $white;
+
+		@extend .input-form;
 	}
 	&__submit {
-		@extend .button;
-		height: 36px;
 		width: 39px;
+		height: 36px;
+
 		font-size: 21px;
-		@extend .fa;
+
 		@extend .fa-send-o;
+		@extend .fa;
+		@extend .button;
 	}
 }
 
 .write-message-form-column {
 	width: 690px;
 	margin-right: 7px;
-	@media screen and(max-width: 760px) {
+	@media screen and(max-width: 768px) {
 		width: 566px;
-	}	
+	}
 	@media screen and(max-width: 480px) {
 		width: 297px;
 	}

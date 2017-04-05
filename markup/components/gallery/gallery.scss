@@ -4,51 +4,63 @@
 
 .gallery-top {
 	display: flex;
-	justify-content: space-between;
+
 	margin-bottom: 20px;
+
+	justify-content: space-between;
 	@media screen and(max-width: 480px) {
 		display: block;
 	}
 	&__button {
-		@extend .button;
-		overflow: hidden;
 		position: relative;
+
+		overflow: hidden;
+
+		padding: 11px 21px 7px 32px;
+
+		font-family: "Lato-Medium";
 		font-size: 14px;
 		line-height: 1;
-		font-family: 'Lato-Medium';
-		padding: 11px 21px 7px 32px;
+
+		@extend .button;
 		@media screen and(max-width: 480px) {
-			padding: 15px 35px 12px 45px;
 			display: table;
-			margin-left: auto;
-			font-size: 16px;
+
 			margin-right: auto;
+			margin-left: auto;
+			padding: 15px 35px 12px 45px;
+
+			font-size: 16px;
 		}
 		&:before {
 			position: absolute;
 			top: 10px;
 			left: 10px;
-			@extend .fa;
+
 			@extend .fa-plus-circle;
+			@extend .fa;
 			@media screen and(max-width: 480px) {
 				top: 13px;
 				left: 18px;
-			}	
+			}
 		}
 	}
 }
 .gallery-top-tabs {
 	display: flex;
+
 	justify-content: flex-start;
 	@media screen and(max-width: 480px) {
 		margin-bottom: 20px;
-	}	
+	}
 	&__item {
 		margin-right: 42px;
-		font-family: 'Lato-Bold';
-		font-size: 27px;
+
 		color: $white;
 		border-bottom: 1px dashed transparent;
+
+		font-family: "Lato-Bold";
+		font-size: 27px;
 		&:hover {
 			color: $red;
 			border-bottom-color: $red;
@@ -65,19 +77,23 @@
 
 .gallery-media {
 	display: flex;
-	justify-content: space-between;
+
 	flex-wrap: wrap;
+	justify-content: space-between;
 	@media screen and(max-width: 320px) {
 		display: block;
 	}
 	&__right {
 		display: flex;
+
+		flex: 1 100%;
 		flex-wrap: wrap;
 		justify-content: space-between;
 	}
 }
 .gallery-media-top {
 	display: flex;
+
 	justify-content: space-between;
 	@media screen and(max-width: 480px) {
 		display: block;
@@ -86,17 +102,41 @@
 
 .gallery-column {
 	margin-bottom: 20px;
+	@media screen and(max-width: 960px) {
+		width: 24%;
+		margin-bottom: 13px;
+	}
 	@media screen and(max-width: 480px) {
-		width: 49%;
-	}	
+		width: 48%;
+	}
 	@media screen and(max-width: 320px) {
 		width: 100%;
 	}
-	&._big {
-		margin-right: 19px;
+	&._top {
+		@media screen and(max-width: 960px) {
+			width: auto;
+			max-width: 48%;
+		}
 		@media screen and(max-width: 480px) {
-			margin-right: 0;
+			width: 48%;
+			max-width: initial;
+		}
+		@media screen and(max-width: 320px) {
 			width: 100%;
-		}		
+		}
+	}
+	&._big {
+		display: flex;
+
+		margin-right: 19px;
+
+		flex: 1 100%;
+		@media screen and(max-width: 960px) {
+			margin-right: 13px;
+		}	
+		@media screen and(max-width: 480px) {
+			width: 100%;
+			margin-right: 0;
+		}
 	}
 }
